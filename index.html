@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Minecraft Idle</title>
+    <link rel="stylesheet" href="/scss/css/main.css">
+<!--     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+</head>
+<body>
+    <header>
+			<div id="storage" onclick="grabSkill(event)">
+				<img id="storageAnim" src="/images/Storage.png" alt="" srcset="">
+				<p class="skillName">storage</p>
+			</div>
+
+			<nav id="skillSelection">
+				<ul>
+					<li class="skill" id="skillWoodcutting" onclick="grabSkill(event)">
+						<div class="skillSkew">
+							<div class="skillOverlay"></div>
+							<img class="skillBackground" src="/images/backgrounds/woodcutting_background.png" alt="" srcset="">
+						</div>
+						<img class="skillIcon" src="/images/icons/woodcutting.png" alt="" srcset="">
+						<p class="skillName">woodcutting</p>
+						<p class="skillLevel">25/99</p>
+					</li>
+
+					<li class="skill" id="skillMining" onclick="grabSkill(event)">
+						<div class="skillSkew">
+							<div class="skillOverlay"></div>
+							<img class="skillBackground" src="/images/backgrounds/mining_background.png" alt="" srcset="">
+						</div>
+						<img class="skillIcon" src="/images/icons/mining.png" alt="" srcset="">
+						<p class="skillName">mining</p>
+						<p class="skillLevel">25/99</p>
+					</li>
+
+					<li class="skill" id="skillExcavation" onclick="grabSkill(event)">
+						<div class="skillSkew">
+							<div class="skillOverlay"></div>
+							<img class="skillBackground" src="/images/backgrounds/excavation_background.jpg" alt="" srcset="">
+						</div>
+						<img class="skillIcon" src="/images/icons/excavation.png" alt="" srcset="">
+						<p class="skillName">excavation</p>
+						<p class="skillLevel">25/99</p>
+					</li>
+
+					<li class="skill" id="skillFishing" onclick="grabSkill(event)">
+						<div class="skillSkew">
+							<div class="skillOverlay"></div>
+							<img class="skillBackground" src="/images/backgrounds/fishing_background.jpg" alt="" srcset="">
+						</div>
+						<img class="skillIcon" src="/images/icons/fishing.png" alt="" srcset="">
+						<p class="skillName">fishing</p>
+						<p class="skillLevel">25/99</p>
+					</li>
+
+					<li class="skill" id="skillBuilding" onclick="grabSkill(event)">
+						<div class="skillSkew">
+							<div class="skillOverlay"></div>
+							<img class="skillBackground" src="/images/backgrounds/building_background.png" alt="" srcset="">
+						</div>
+						<img class="skillIcon" src="/images/icons/building.png" alt="" srcset="">
+						<p class="skillName">building</p>
+						<p class="skillLevel">25/99</p>
+					</li>
+
+					<li class="skill" id="skillFarming" onclick="grabSkill(event)">
+						<div class="skillSkew">
+							<div class="skillOverlay"></div>
+							<img class="skillBackground" src="/images/backgrounds/farming_background.jpg" alt="" srcset="">
+						</div>
+						<img class="skillIcon" src="/images/icons/farming.png" alt="" srcset="">
+						<p class="skillName">farming</p>
+						<p class="skillLevel">25/99</p>
+					</li>
+
+					<li class="skill" id="skillSmelting" onclick="grabSkill(event)">
+						<div class="skillSkew">
+							<div class="skillOverlay"></div>
+							<img class="skillBackground" src="/images/backgrounds/smelting_background.jpg" alt="" srcset="">
+						</div>
+						<img class="skillIcon" src="/images/icons/smelting.png" alt="" srcset="">
+						<p class="skillName">smelting</p>
+						<p class="skillLevel">25/99</p>
+					</li>
+
+					<li class="skill" id="skillCrafting" onclick="grabSkill(event)">
+						<div class="skillSkew">
+							<div class="skillOverlay"></div>
+							<img class="skillBackground" src="/images/backgrounds/crafting_background.jpeg" alt="" srcset="">
+						</div>
+						<img class="skillIcon" src="/images/icons/crafting.png" alt="" srcset="">
+						<p class="skillName">crafting</p>
+						<p class="skillLevel">25/99</p>
+					</li>
+
+					<li class="skill" id="skillCombat" onclick="grabSkill(event)">
+						<div class="skillSkew">
+							<div class="skillOverlay"></div>
+							<img class="skillBackground" src="/images/backgrounds/combat_background.png" alt="" srcset="">
+						</div>
+						<img class="skillIcon" src="/images/icons/combat.png" alt="" srcset="">
+						<p class="skillName">combat</p>
+						<p class="skillLevel">25/99</p>
+					</li>
+
+					<li class="skill" id="skillEnchanting" onclick="grabSkill(event)">
+						<div class="skillSkew">
+							<div class="skillOverlay"></div>
+							<img class="skillBackground" src="/images/backgrounds/enchanting_background.jpg" alt="" srcset="">
+						</div>
+						<img class="skillIcon" src="/images/icons/enchanting.png" alt="" srcset="">
+						<p class="skillName">enchanting</p>
+						<p class="skillLevel">25/99</p>
+					</li>
+
+					<li class="skill" id="skillTaming" onclick="grabSkill(event)">
+						<div class="skillSkew">
+							<div class="skillOverlay"></div>
+							<img class="skillBackground" src="/images/backgrounds/taming_background.jpg" alt="" srcset="">
+						</div>
+						<img class="skillIcon" src="/images/icons/taming.png" alt="" srcset="">
+						<p class="skillName">taming</p>
+						<p class="skillLevel">25/99</p>
+					</li>
+				</ul>
+			</nav>
+
+			<div id="shop" onclick="grabSkill(event)">
+				<img src="/images/shop.png" alt="" srcset="">
+				<p class="skillName">shop</p>
+			</div>
+    </header>
+    <main>
+			<div id="achievements" onclick="">
+				<img src="/images/Achievements.png" alt="" srcset="">
+			</div>
+			<div id="dimensions">
+				<div id="dimensionOverworld">
+					<img src="/images/overworld.jpg" alt="" srcset="">
+					<p>overworld</p>
+				</div>
+				<div id="dimensionNether">
+					<img src="/images/portal_block.png" alt="" srcset="">
+					<p>nether</p>
+				</div>
+				<div id="dimensionEnd">
+					<img src="/images/end-portal.png" alt="" srcset="">
+					<p>the end</p>
+				</div>
+			</div>
+			<section id="innerScreen">
+
+				<div id="innerBanner">
+					<div>
+						<img id="innerLogo" src="images/icons/woodcutting.png" alt="" srcset="">
+						<h2 id="innerName">woodcutting</h2>
+					</div>
+					<div>
+						<p id="innerXP">2564 / 4376</p>
+						<p id="innerLVL">level 25</p>
+						<progress id="innerBar" value="56" max="100"></progress>
+					</div>
+				</div>
+
+				<div id="innerHotbarWrapper">
+					<p id="hotbarNotif">equipped : fox</p>
+
+					<div id="innerHotbar">
+						<div class="hotbarItem" id="hotbarWeapon" onclick="">
+							<img class="hotbarLogo" src="images/icons/woodcutting.png" alt="" srcset="">
+						</div>
+						<div class="hotbarItem" id="hotbarEnchants" onclick="">
+							<img class="hotbarLogo" src="images/icons/woodcutting.png" alt="" srcset="">
+						</div>
+						<div class="hotbarItem" id="hotbarBuilding" onclick="">
+							<img class="hotbarLogo" src="images/icons//woodcutting.png" alt="" srcset="">
+						</div>
+						<div class="hotbarItem" id="hotbarPet" onclick="">
+							<img class="hotbarLogo" src="images/icons/woodcutting.png" alt="" srcset="">
+						</div>
+						<div class="hotbarItem" id="hotbarFood" onclick="">
+							<img class="hotbarLogo" src="images/icons/woodcutting.png" alt="" srcset="">
+						</div>
+					</div>
+
+					<div id="stamina">
+						<progress id="staminaBar" value="50" max="100"></progress>
+						<img class="staminaBarLogo" src="images/stamina_icon.png" alt="" srcset="">
+						<img class="staminaBarLogo" src="images/stamina_icon.png" alt="" srcset="">
+						<img class="staminaBarLogo" src="images/stamina_icon.png" alt="" srcset="">
+						<img class="staminaBarLogo" src="images/stamina_icon.png" alt="" srcset="">
+						<img class="staminaBarLogo" src="images/stamina_icon.png" alt="" srcset="">
+						<img class="staminaBarLogo" src="images/stamina_icon.png" alt="" srcset="">
+						<img class="staminaBarLogo" src="images/stamina_icon.png" alt="" srcset="">
+						<img class="staminaBarLogo" src="images/stamina_icon.png" alt="" srcset="">
+						<img class="staminaBarLogo" src="images/stamina_icon.png" alt="" srcset="">
+						<img class="staminaBarLogo" src="images/stamina_icon.png" alt="" srcset="">
+					</div>
+					
+				</div>
+			</section>
+			<section id="skillPage">
+				<!-- Inject Skill -->
+			</section>
+    </main>
+</body>
+<script type="text/javascript" src="woodcutting.js" async="async"></script>
+<script type="text/javascript" src="general.js" async="async"></script>
+
+</html>

@@ -1,0 +1,73 @@
+{
+	"oaklog" : [{
+		"name" : "Oak Tree",
+		"lvlrequirement" : 1,
+		"interval" : 5,
+		"durability" : 1,
+		"experience" : 5,
+		"imageSRC" : "images/woodcutting/Oak_Tree.png"
+	}],
+
+	"birchlog" : [{
+		"name" : "Birch Tree",
+		"lvlrequirement" : 10,
+		"interval" : 8,
+		"durability" : 1,
+		"experience" : 10,
+		"imageSRC" : "images/woodcutting/Birch_Tree.png"
+	}],
+	
+	"sprucelog" : [{
+		"name" : "Spruce Tree",
+		"lvlrequirement" : 20,
+		"interval" : 10,
+		"durability" : 4,
+		"experience" : 15,
+		"imageSRC" : "images/woodcutting/Spruce_Tree.png"
+	}],
+
+	"junglelog" : [{
+		"name" : "Jungle Tree",
+		"lvlrequirement" : 35,
+		"interval" : 11,
+		"durability" : 4,
+		"experience" : 20,
+		"imageSRC" : "images/woodcutting/Jungle_Tree.png"
+	}],
+
+	"acacialog" : [{
+		"name" : "Acacia Tree",
+		"lvlrequirement" : 50,
+		"interval" : 12,
+		"durability" : 6,
+		"experience" : 30,
+		"imageSRC" : "images/woodcutting/Acacia_Tree.png"
+	}],
+
+	"darkoaklog" : [{
+		"name" : "Dark Oak Tree",
+		"lvlrequirement" : 65,
+		"interval" : 15,
+		"durability" : 8,
+		"experience" : 50,
+		"imageSRC" : "images/woodcutting/Dark_Oak_Tree.png"
+	}],
+
+	"crimsonlog" : [{
+		"name" : "Crimson Tree",
+		"lvlrequirement" : 75,
+		"interval" : 20,
+		"durability" : 10,
+		"experience" : 75,
+		"imageSRC" : "images/woodcutting/Huge_Crimson_fungi.png"
+	}],
+
+	"warpedlog" : [{
+		"name" : "Warped Tree",
+		"lvlrequirement" : 90,
+		"interval" : 25,
+		"durability" : 12,
+		"experience" : 100,
+		"imageSRC" : "images/woodcutting/Huge_Warped_fungi.png"
+	}]
+}

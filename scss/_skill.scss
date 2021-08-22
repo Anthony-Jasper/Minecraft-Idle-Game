@@ -1,0 +1,189 @@
+.toolIcon,
+.itemWrapping,
+.treeImage,
+.itemData,
+.treeName,
+.lvlreq,
+.xpInterval,
+.interval {
+  pointer-events: none;
+}
+#innerBanner {
+  position: relative;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 35px;
+  background: $woodcutting;
+}
+#innerLogo {
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+  vertical-align: middle;
+}
+#innerName {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  color: $white;
+  font-size: 36px;
+  letter-spacing: 2px;
+  font-weight: 100;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  margin-left: 5px;
+}
+
+#innerXP {
+  position: relative;
+  display: inline-block;
+  color: $light-grey;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+#innerLVL {
+  position: relative;
+  float: right;
+  color: $light-grey;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+#innerBar {
+  position: relative;
+  display: block;
+  width: 25em;
+  border: 2px solid $medium-grey;
+  border-radius: 5px;
+  height: 10px;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
+}
+#innerBar::-webkit-progress-bar {
+  background-color: transparent;
+}
+
+#innerBar::-webkit-progress-value {
+  background-color: $mainprogress;
+  box-shadow: inset 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  border-right: 2px solid $medium-grey;
+}
+
+#woodcuttingSkill {
+  position: relative;
+  display: grid;
+  justify-content: center;
+  padding: 100px 45px 200px 45px;
+  column-gap: 50px;
+  row-gap: 100px;
+  grid-template-columns: repeat(4, 300px);
+}
+.woodcuttingItem {
+  position: relative;
+  display: block;
+  border-top: 3px solid $woodcutting;
+  width: 300px;
+  height: 160px;
+  box-shadow: 0px 2px 5px 0px $black;
+  background: rgba($light-grey, 0.7);
+  cursor: pointer;
+}
+.itemWrapping {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  img {
+    position: relative;
+    width: 150px;
+    height: 140px;
+    object-fit: contain;
+  }
+}
+
+.toolIcon {
+  position: absolute;
+  display: block;
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  top: 5px;
+  right: 5px;
+}
+.itemNotif {
+  position: absolute;
+  display: block;
+  bottom: -30px;
+  left: 50%;
+  transform: translatex(-50%);
+  color: $light-grey;
+  img {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    vertical-align: middle;
+  }
+  p {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 13px;
+  }
+}
+
+#skillPage {
+  position: relative;
+  background-image: url("../../images/backgrounds/woodcutting_background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba($woodcutting, 0.8);
+  }
+}
+
+.itemData {
+  position: relative;
+  display: block;
+  text-align: center;
+  h3 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 100;
+    font-size: 24px;
+  }
+  p:first-of-type {
+    font-size: 14px;
+    line-height: 1;
+  }
+  p:last-of-type {
+    margin-top: 30px;
+  }
+}
+
+.interval {
+  position: relative;
+  display: block;
+  width: 125px;
+  border: 2px solid $dark-grey;
+  height: 15px;
+  background-color: transparent;
+}
+.intervalBar {
+  height: inherit;
+  width: 0%;
+  background-color: $woodcutting;
+}

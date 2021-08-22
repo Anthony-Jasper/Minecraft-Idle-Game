@@ -1,0 +1,10 @@
+{
+	"durability" : [{
+		"wood" : 59,
+		"stone" : 131,
+		"iron" : 250,
+		"gold" : 320,
+		"diamond" : 450,
+		"netherite" : 600
+	}]
+}

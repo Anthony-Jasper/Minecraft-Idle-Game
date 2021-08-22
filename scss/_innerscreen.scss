@@ -1,0 +1,116 @@
+#achievements {
+  position: fixed;
+  top: 85%;
+  transform: translateY(-85%);
+  width: 65px;
+  height: 65px;
+  background: $black;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+}
+
+#dimensions {
+  position: fixed;
+  top: 85%;
+  right: 0;
+  transform: translateY(-85%);
+  width: 65px;
+  height: 185px;
+  background: $black;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  img {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    padding-top: 10px;
+    top: 5px;
+  }
+  p {
+    font-size: 14px;
+    line-height: 1;
+    position: relative;
+  }
+}
+
+#dimensionOverworld,
+#dimensionNether,
+#dimensionEnd {
+  text-align: center;
+  color: $medium-grey;
+  cursor: pointer;
+}
+
+#innerHotbarWrapper {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+#hotbarNotif {
+  color: $medium-grey;
+  font-size: 14px;
+  text-shadow: 0 2px 1px rgba(0, 0, 0, 0.6);
+}
+.hotbarLogo {
+  position: relative;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+}
+.staminaBarLogo {
+  position: relative;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  object-fit: contain;
+}
+#innerHotbar {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.hotbarItem {
+  height: 35px;
+  padding: 2px;
+  border: 2px solid $medium-grey;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2),
+    inset 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.hotbarLogo {
+  position: relative;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+}
+#stamina {
+  margin-top: 5px;
+}
+#staminaBar {
+  position: absolute;
+  visibility: hidden;
+}

@@ -1,0 +1,108 @@
+header {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  background: $black;
+  padding: 0 35px;
+}
+
+#storage,
+#shop {
+  position: relative;
+  display: block;
+  color: $medium-grey;
+  text-align: center;
+  cursor: pointer;
+}
+#storage img {
+  position: relative;
+  display: block;
+  width: 95px;
+  height: 95px;
+}
+
+#shop img {
+  position: relative;
+  display: block;
+  width: 95px;
+  height: 105px;
+}
+
+#skillSelection ul {
+  position: relative;
+  display: flex;
+  list-style: none;
+  .skill {
+    position: relative;
+    height: 150px;
+    width: 95px;
+    margin: 0 5px;
+    cursor: pointer;
+    .skillSkew {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      overflow: hidden;
+      border: 2px solid $medium-grey;
+      transform: skew(-20deg);
+      .skillBackground {
+        width: 100%;
+        height: inherit;
+        object-fit: cover;
+        object-position: center;
+        transform: scale(1.5) skew(20deg);
+      }
+      .skillOverlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: $black;
+        opacity: 0.7;
+        z-index: 2;
+      }
+    }
+    .skillIcon {
+      position: relative;
+      display: block;
+      width: 25px;
+      height: 25px;
+      top: 40%;
+      margin: 0 auto;
+      object-fit: contain;
+      transform: translateY(-40%);
+    }
+    .skillName,
+    .skillLevel {
+      position: relative;
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .skillName {
+      color: $medium-grey;
+      text-align: center;
+      top: 40%;
+      transform: translateY(-40%);
+    }
+    .skillLevel {
+      color: $white;
+      font-size: 10px;
+      top: 34%;
+      transform: translateY(-34%);
+    }
+  }
+}
+
+.skillSkew,
+.skillIcon,
+.skillName,
+.skillLevel {
+  pointer-events: none;
+}
