@@ -363,11 +363,9 @@ header {
   position: relative;
   display: block;
   width: 25em;
-  border: 2px solid #c8cdd0;
-  border-radius: 5px;
+  border: 2px;
   height: 10px;
-  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
+  background-color: rgba(214, 179, 0, 0.1);
 }
 
 #innerBar::-webkit-progress-bar {
@@ -378,8 +376,6 @@ header {
   background-color: #d6b300;
   -webkit-box-shadow: inset 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
           box-shadow: inset 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
-  border-right: 2px solid #c8cdd0;
 }
 
 #woodcuttingSkill {

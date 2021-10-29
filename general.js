@@ -16,11 +16,11 @@ window.addEventListener('load', (event) => {
 });
 
 
-const grabSkill = (event, wood) => {
+const grabSkill = (event, page) => {
 	const skillItem = event.target;
 	let fileName;
 
-	if(wood == 'woodcutting'){
+	if(page == 'woodcutting'){
 		fileName = "woodcutting";
 	}
 	else{
@@ -42,6 +42,7 @@ const grabSkill = (event, wood) => {
 				// Select skill container to inject the html into 
         const skillPage = document.querySelector('#skillPage');
 				skillPage.innerHTML = html;
+				/* TODO: This needs to be expanded to allow other data to be pulled when other files are in play */
 				if(fileName == "woodcutting"){
 					woodcuttingData();
 				}
