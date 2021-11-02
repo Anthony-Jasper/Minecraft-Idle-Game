@@ -378,7 +378,8 @@ header {
           box-shadow: inset 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
 }
 
-#woodcuttingSkill {
+#woodcuttingSkill,
+#miningSkill {
   position: relative;
   display: -ms-grid;
   display: grid;
@@ -393,7 +394,7 @@ header {
       grid-template-columns: repeat(4, 300px);
 }
 
-.woodcuttingItem {
+.skillcontainer {
   position: relative;
   display: block;
   border-top: 3px solid #448663;
@@ -403,6 +404,57 @@ header {
           box-shadow: 0px 2px 5px 0px #1f292e;
   background: rgba(242, 242, 242, 0.7);
   cursor: pointer;
+}
+
+.skillcontainer .lockedSkill {
+  display: none;
+}
+
+.skillcontainer.locked {
+  pointer-events: none;
+}
+
+.skillcontainer.locked .lockedSkill {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(15, 41, 46, 0.95);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.skillcontainer.locked .lockedSkill .lockedTitle {
+  position: relative;
+  color: rgba(200, 205, 208, 0.5);
+  font-size: 24px;
+  line-height: 1;
+}
+
+.skillcontainer.locked .lockedSkill .lockedImage {
+  position: absolute;
+  width: 30%;
+  opacity: 0.1;
+  -webkit-filter: invert(0.8);
+          filter: invert(0.8);
+}
+
+.skillcontainer.locked .lockedSkill .lockedLvl {
+  position: relative;
+  color: #c8cdd0;
+  font-size: 14px;
 }
 
 .itemWrapping {
@@ -450,11 +502,12 @@ header {
 .itemNotif {
   position: absolute;
   display: block;
-  bottom: -30px;
+  bottom: -50px;
   left: 50%;
   -webkit-transform: translatex(-50%);
           transform: translatex(-50%);
   color: #f2f2f2;
+  opacity: 0;
 }
 
 .itemNotif img {
@@ -472,6 +525,31 @@ header {
   display: inline-block;
   vertical-align: middle;
   font-size: 13px;
+}
+
+.itemNotif.itemCollected {
+  -webkit-animation: itemCollected 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+          animation: itemCollected 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* NOTIF ANIMATION */
+@-webkit-keyframes itemCollected {
+  85% {
+    opacity: 1;
+    bottom: -30px;
+  }
+  90% {
+    opacity: 0;
+  }
+}
+@keyframes itemCollected {
+  85% {
+    opacity: 1;
+    bottom: -30px;
+  }
+  90% {
+    opacity: 0;
+  }
 }
 
 #skillPage {

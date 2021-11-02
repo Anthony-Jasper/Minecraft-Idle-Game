@@ -1,14 +1,14 @@
-const woodcuttingData = () => {
+const miningData = () => {
 	//grabbing all the elements to inject data into
-	const woodcuttingItems = document.querySelectorAll('#woodcuttingSkill .woodcuttingItem');
-	const levelReq = document.querySelectorAll('#woodcuttingSkill .lvlreq');
-	const expInt = document.querySelectorAll('#woodcuttingSkill .xpInterval');
-	const imageSrc = document.querySelectorAll('#woodcuttingSkill .treeImage');
-	const treeName = document.querySelectorAll('#woodcuttingSkill .treeName');
-	const progressBars = document.querySelectorAll("#woodcuttingSkill .intervalBar");
-	const itemNotification = document.querySelectorAll("#woodcuttingSkill .itemNotif");
-	const notifSrc = document.querySelectorAll("#woodcuttingSkill .notifImage");
-	const lockedLevel = document.querySelectorAll("#woodcuttingSkill .lockedLvl");
+	const woodcuttingItems = document.querySelectorAll('#miningSkill .miningItem');
+	const levelReq = document.querySelectorAll('#miningSkill .lvlreq');
+	const expInt = document.querySelectorAll('#miningSkill .xpInterval');
+	const imageSrc = document.querySelectorAll('#miningSkill .treeImage');
+	const treeName = document.querySelectorAll('#miningSkill .treeName');
+	const progressBars = document.querySelectorAll("#miningSkill .intervalBar");
+	const itemNotification = document.querySelectorAll("#miningSkill .itemNotif");
+	const notifSrc = document.querySelectorAll("#miningSkill .notifImage");
+	const lockedLevel = document.querySelectorAll("#miningSkill .lockedLvl");
 	//sets all skill intervals to 0
 	let itemInterval = 0;
 	/* 

@@ -5,7 +5,8 @@
 		"interval" : 5,
 		"durability" : 1,
 		"experience" : 5,
-		"imageSRC" : "images/woodcutting/Oak_Tree.png"
+		"imageSRC" : "images/woodcutting/Oak_Tree.png",
+		"notifSRC" : "images/woodcutting/Oak_Log.png"
 	}],
 
 	"birchlog" : [{
@@ -14,7 +15,8 @@
 		"interval" : 8,
 		"durability" : 1,
 		"experience" : 10,
-		"imageSRC" : "images/woodcutting/Birch_Tree.png"
+		"imageSRC" : "images/woodcutting/Birch_Tree.png",
+		"notifSRC" : "images/woodcutting/Birch_Log.png"
 	}],
 	
 	"sprucelog" : [{
@@ -23,7 +25,8 @@
 		"interval" : 10,
 		"durability" : 4,
 		"experience" : 15,
-		"imageSRC" : "images/woodcutting/Spruce_Tree.png"
+		"imageSRC" : "images/woodcutting/Spruce_Tree.png",
+		"notifSRC" : "images/woodcutting/Spruce_Log.png"
 	}],
 
 	"junglelog" : [{
@@ -32,7 +35,8 @@
 		"interval" : 11,
 		"durability" : 4,
 		"experience" : 20,
-		"imageSRC" : "images/woodcutting/Jungle_Tree.png"
+		"imageSRC" : "images/woodcutting/Jungle_Tree.png",
+		"notifSRC" : "images/woodcutting/Jungle_Log.png"
 	}],
 
 	"acacialog" : [{
@@ -41,7 +45,8 @@
 		"interval" : 12,
 		"durability" : 6,
 		"experience" : 30,
-		"imageSRC" : "images/woodcutting/Acacia_Tree.png"
+		"imageSRC" : "images/woodcutting/Acacia_Tree.png",
+		"notifSRC" : "images/woodcutting/Acacia_Log.png"
 	}],
 
 	"darkoaklog" : [{
@@ -50,7 +55,8 @@
 		"interval" : 15,
 		"durability" : 8,
 		"experience" : 50,
-		"imageSRC" : "images/woodcutting/Dark_Oak_Tree.png"
+		"imageSRC" : "images/woodcutting/Dark_Oak_Tree.png",
+		"notifSRC" : "images/woodcutting/Dark_Oak_Log.png"
 	}],
 
 	"crimsonlog" : [{
@@ -59,7 +65,8 @@
 		"interval" : 20,
 		"durability" : 10,
 		"experience" : 75,
-		"imageSRC" : "images/woodcutting/Huge_Crimson_fungi.png"
+		"imageSRC" : "images/woodcutting/Huge_Crimson_fungi.png",
+		"notifSRC" : "images/woodcutting/Crimson_Stem.png"
 	}],
 
 	"warpedlog" : [{
@@ -68,6 +75,7 @@
 		"interval" : 25,
 		"durability" : 12,
 		"experience" : 100,
-		"imageSRC" : "images/woodcutting/Huge_Warped_fungi.png"
+		"imageSRC" : "images/woodcutting/Huge_Warped_fungi.png",
+		"notifSRC" : "images/woodcutting/Warped_Stem.png"
 	}]
 }

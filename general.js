@@ -19,7 +19,7 @@ window.addEventListener('load', (event) => {
 const grabSkill = (event, page) => {
 	const skillItem = event.target;
 	let fileName;
-
+	//default
 	if(page == 'woodcutting'){
 		fileName = "woodcutting";
 	}
@@ -33,19 +33,26 @@ const grabSkill = (event, page) => {
         return response.text();
     })
   	.then((html) => {
-        // Initialize the DOM parser
-        const parser = new DOMParser();
+			// Initialize the DOM parser
+			const parser = new DOMParser();
 
-        // Parse the text
-        const doc = parser.parseFromString(html, "text/html");
+			// Parse the text
+			const doc = parser.parseFromString(html, "text/html");
 
-				// Select skill container to inject the html into 
-        const skillPage = document.querySelector('#skillPage');
-				skillPage.innerHTML = html;
-				/* TODO: This needs to be expanded to allow other data to be pulled when other files are in play */
-				if(fileName == "woodcutting"){
+			// Select skill container to inject the html into 
+			const skillPage = document.querySelector('#skillPage');
+			skillPage.innerHTML = html;
+			/* TODO: This needs to be expanded to allow other data to be pulled when other files are in play */
+			
+			switch (fileName) {
+				case 'woodcutting':
 					woodcuttingData();
-				}
+					break;
+				case 'mining':
+					miningData();
+					break;
+				default:
+			}
   	})
   	.catch(function(err) {  
       console.log('Failed to fetch page: ', err);  

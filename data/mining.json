@@ -1,0 +1,210 @@
+{
+	"stone" : [{
+		"name" : "Stone",
+		"lvlrequirement" : 1,
+		"interval" : 5,
+		"durability" : 1,
+		"experience" : 5,
+		"imageSRC" : "images/mining/Stone.png",
+		"notifSRC" : "images/mining/Cobblestone.png",
+		"type" : "block"
+	}],
+
+	"sandstone" : [{
+		"name" : "sandstone",
+		"lvlrequirement" : 1,
+		"interval" : 5,
+		"durability" : 1,
+		"experience" : 5,
+		"imageSRC" : "images/mining/Sandstone.png",
+		"notifSRC" : "images/mining/Sandstone.png",
+		"type" : "block"
+	}],
+	
+	"coal" : [{
+		"name" : "Coal Ore",
+		"lvlrequirement" : 5,
+		"interval" : 6,
+		"durability" : 4,
+		"experience" : 7,
+		"imageSRC" : "images/mining/Coal_Ore.png",
+		"notifSRC" : "images/mining/Coal.png",
+		"type" : "ore"
+	}],
+
+	"iron" : [{
+		"name" : "Iron Ore",
+		"lvlrequirement" : 10,
+		"interval" : 8,
+		"durability" : 4,
+		"experience" : 10,
+		"imageSRC" : "images/mining/Iron_Ore.png",
+		"notifSRC" : "images/mining/Iron_Ore.png",
+		"type" : "ore"
+	}],
+
+	"lapis" : [{
+		"name" : "Lapis Lazuli Ore",
+		"lvlrequirement" : 20,
+		"interval" : 9,
+		"durability" : 4,
+		"experience" : 15,
+		"imageSRC" : "images/mining/Lapis_Lazuli_Ore.png",
+		"notifSRC" : "images/mining/Lapis_Lazuli.png",
+		"type" : "ore"
+	}],
+
+	"redstone" : [{
+		"name" : "Redstone Ore",
+		"lvlrequirement" : 20,
+		"interval" : 10,
+		"durability" : 6,
+		"experience" : 15,
+		"imageSRC" : "images/mining/Redstone_Ore.png",
+		"notifSRC" : "images/mining/Redstone.png",
+		"type" : "ore"
+	}],
+
+	"emerald" : [{
+		"name" : "Emerald Ore",
+		"lvlrequirement" : 30,
+		"interval" : 11,
+		"durability" : 6,
+		"experience" : 20,
+		"imageSRC" : "images/mining/Emerald_Ore.png",
+		"notifSRC" : "images/mining/Emerald.png",
+		"type" : "ore"
+	}],
+
+	"gold" : [{
+		"name" : "Gold Ore",
+		"lvlrequirement" : 40,
+		"interval" : 12,
+		"durability" : 6,
+		"experience" : 25,
+		"imageSRC" : "images/mining/Gold_Ore.png",
+		"notifSRC" : "images/mining/Gold_Ore.png",
+		"type" : "ore"
+	}],
+
+	"diamond" : [{
+		"name" : "Diamond Ore",
+		"lvlrequirement" : 45,
+		"interval" : 13,
+		"durability" : 8,
+		"experience" : 27,
+		"imageSRC" : "images/mining/Diamond_Ore.png",
+		"notifSRC" : "images/mining/Diamond.png",
+		"type" : "ore"
+	}],
+
+	"obsidian" : [{
+		"name" : "Obsidian",
+		"lvlrequirement" : 50,
+		"interval" : 30,
+		"durability" : 8,
+		"experience" : 30,
+		"imageSRC" : "images/mining/Obsidian.png",
+		"notifSRC" : "images/mining/Obsidian.png",
+		"type" : "block"
+	}],
+
+	"basalt" : [{
+		"name" : "Basalt",
+		"lvlrequirement" : 60,
+		"interval" : 30,
+		"durability" : 4,
+		"experience" : 35,
+		"imageSRC" : "images/mining/Basalt.png",
+		"notifSRC" : "images/mining/Basalt.png",
+		"type" : "block"
+	}],
+
+	"blackstone" : [{
+		"name" : "Blackstone",
+		"lvlrequirement" : 60,
+		"interval" : 30,
+		"durability" : 8,
+		"experience" : 40,
+		"imageSRC" : "images/mining/Blackstone.png",
+		"notifSRC" : "images/mining/Blackstone.png",
+		"type" : "block"
+	}],
+
+	"cryingobsidian" : [{
+		"name" : "Crying Obsidian",
+		"lvlrequirement" : 60,
+		"interval" : 30,
+		"durability" : 8,
+		"experience" : 40,
+		"imageSRC" : "images/mining/Crying_Obsidian.png",
+		"notifSRC" : "images/mining/Crying_Obsidian.png",
+		"type" : "block"
+	}],
+
+	"netherrack" : [{
+		"name" : "Netherrack",
+		"lvlrequirement" : 70,
+		"interval" : 30,
+		"durability" : 8,
+		"experience" : 50,
+		"imageSRC" : "images/mining/Netherrack.png",
+		"notifSRC" : "images/mining/Netherrack.png",
+		"type" : "block"
+	}],
+
+	"glowstone" : [{
+		"name" : "Glowstone",
+		"lvlrequirement" : 75,
+		"interval" : 30,
+		"durability" : 12,
+		"experience" : 55,
+		"imageSRC" : "images/mining/Glowstone.png",
+		"notifSRC" : "images/mining/Glowstone_Dust.png",
+		"type" : "ore"
+	}],
+
+	"quartz" : [{
+		"name" : "Nether Quartz Ore",
+		"lvlrequirement" : 75,
+		"interval" : 30,
+		"durability" : 12,
+		"experience" : 60,
+		"imageSRC" : "images/mining/Nether_Quartz_Ore.png",
+		"notifSRC" : "images/mining/Nether_Quartz.png",
+		"type" : "ore"
+	}],
+
+	"endstone" : [{
+		"name" : "End Stone",
+		"lvlrequirement" : 80,
+		"interval" : 25,
+		"durability" : 4,
+		"experience" : 75,
+		"imageSRC" : "images/mining/End_Stone.png",
+		"notifSRC" : "images/mining/End_Stone.png",
+		"type" : "block"
+	}],
+
+	"purpur" : [{
+		"name" : "Purpur",
+		"lvlrequirement" : 85,
+		"interval" : 30,
+		"durability" : 8,
+		"experience" : 125,
+		"imageSRC" : "images/mining/Purpur_Block.png",
+		"notifSRC" : "images/mining/Purpur_Block.png",
+		"type" : "block"
+	}],
+
+	"ancientdebris" : [{
+		"name" : "Ancient Debris",
+		"lvlrequirement" : 90,
+		"interval" : 40,
+		"durability" : 15,
+		"experience" : 200,
+		"imageSRC" : "images/mining/Ancient_Debris.png",
+		"notifSRC" : "images/mining/Ancient_Debris.png",
+		"type" : "ore"
+	}]
+}
