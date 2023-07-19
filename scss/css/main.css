@@ -1,22 +1,12 @@
 header {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
   overflow: hidden;
-  background: #1f292e;
+  background: rgb(31, 41, 46);
   padding: 0 35px;
 }
 
@@ -24,7 +14,7 @@ header {
 #shop {
   position: relative;
   display: block;
-  color: #c8cdd0;
+  color: rgb(200, 205, 208);
   text-align: center;
   cursor: pointer;
 }
@@ -45,12 +35,9 @@ header {
 
 #skillSelection ul {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   list-style: none;
 }
-
 #skillSelection ul .skill {
   position: relative;
   height: 150px;
@@ -58,18 +45,15 @@ header {
   margin: 0 5px;
   cursor: pointer;
 }
-
 #skillSelection ul .skill .skillSkew {
   position: absolute;
   height: 100%;
   width: 100%;
   top: 0;
   overflow: hidden;
-  border: 2px solid #c8cdd0;
-  -webkit-transform: skew(-20deg);
-          transform: skew(-20deg);
+  border: 2px solid rgb(200, 205, 208);
+  transform: skew(-20deg);
 }
-
 #skillSelection ul .skill .skillSkew .skillBackground {
   width: 100%;
   height: inherit;
@@ -77,21 +61,18 @@ header {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
-  -webkit-transform: scale(1.5) skew(20deg);
-          transform: scale(1.5) skew(20deg);
+  transform: scale(1.5) skew(20deg);
 }
-
 #skillSelection ul .skill .skillSkew .skillOverlay {
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  background: #1f292e;
+  background: rgb(31, 41, 46);
   opacity: 0.7;
   z-index: 2;
 }
-
 #skillSelection ul .skill .skillIcon {
   position: relative;
   display: block;
@@ -101,10 +82,8 @@ header {
   margin: 0 auto;
   -o-object-fit: contain;
      object-fit: contain;
-  -webkit-transform: translateY(-40%);
-          transform: translateY(-40%);
+  transform: translateY(-40%);
 }
-
 #skillSelection ul .skill .skillName,
 #skillSelection ul .skill .skillLevel {
   position: relative;
@@ -112,21 +91,17 @@ header {
   margin: 0 auto;
   text-align: center;
 }
-
 #skillSelection ul .skill .skillName {
-  color: #c8cdd0;
+  color: rgb(200, 205, 208);
   text-align: center;
   top: 40%;
-  -webkit-transform: translateY(-40%);
-          transform: translateY(-40%);
+  transform: translateY(-40%);
 }
-
 #skillSelection ul .skill .skillLevel {
   color: #fff;
   font-size: 10px;
   top: 34%;
-  -webkit-transform: translateY(-34%);
-          transform: translateY(-34%);
+  transform: translateY(-34%);
 }
 
 .skillSkew,
@@ -139,16 +114,13 @@ header {
 #achievements {
   position: fixed;
   top: 85%;
-  -webkit-transform: translateY(-85%);
-          transform: translateY(-85%);
+  transform: translateY(-85%);
   width: 65px;
   height: 65px;
-  background: #1f292e;
-  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
+  background: rgb(31, 41, 46);
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
   z-index: 100;
 }
-
 #achievements img {
   width: 40px;
   height: 40px;
@@ -158,8 +130,7 @@ header {
   margin: 0 auto;
   top: 50%;
   position: relative;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   cursor: pointer;
 }
 
@@ -167,16 +138,13 @@ header {
   position: fixed;
   top: 85%;
   right: 0;
-  -webkit-transform: translateY(-85%);
-          transform: translateY(-85%);
+  transform: translateY(-85%);
   width: 65px;
   height: 185px;
-  background: #1f292e;
-  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
+  background: rgb(31, 41, 46);
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
   z-index: 100;
 }
-
 #dimensions img {
   position: relative;
   width: 25px;
@@ -184,7 +152,6 @@ header {
   padding-top: 10px;
   top: 5px;
 }
-
 #dimensions p {
   font-size: 14px;
   line-height: 1;
@@ -195,29 +162,18 @@ header {
 #dimensionNether,
 #dimensionEnd {
   text-align: center;
-  color: #c8cdd0;
+  color: rgb(200, 205, 208);
   cursor: pointer;
 }
 
 #innerHotbarWrapper {
   position: fixed;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
   bottom: 0;
   left: 0;
   right: 0;
@@ -225,7 +181,7 @@ header {
 }
 
 #hotbarNotif {
-  color: #c8cdd0;
+  color: rgb(200, 205, 208);
   font-size: 14px;
   text-shadow: 0 2px 1px rgba(0, 0, 0, 0.6);
 }
@@ -250,31 +206,19 @@ header {
 
 #innerHotbar {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .hotbarItem {
   height: 35px;
   padding: 2px;
-  border: 2px solid #c8cdd0;
-  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2), inset 0px 2px 4px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2), inset 0px 2px 4px rgba(0, 0, 0, 0.2);
+  border: 2px solid rgb(200, 205, 208);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2), inset 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .hotbarLogo {
@@ -297,9 +241,9 @@ header {
 
 .toolIcon,
 .itemWrapping,
-.treeImage,
+.itemImage,
 .itemData,
-.treeName,
+.itemName,
 .lvlreq,
 .xpInterval,
 .interval {
@@ -308,19 +252,11 @@ header {
 
 #innerBanner {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
   padding: 15px 35px;
-  background: #448663;
 }
 
 #innerLogo {
@@ -348,14 +284,14 @@ header {
 #innerXP {
   position: relative;
   display: inline-block;
-  color: #f2f2f2;
+  color: rgb(242, 242, 242);
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 #innerLVL {
   position: relative;
   float: right;
-  color: #f2f2f2;
+  color: rgb(242, 242, 242);
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 
@@ -374,112 +310,77 @@ header {
 
 #innerBar::-webkit-progress-value {
   background-color: #d6b300;
-  -webkit-box-shadow: inset 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
-          box-shadow: inset 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
 }
 
 #woodcuttingSkill,
-#miningSkill {
+#miningSkill, #excavationSkill, #fishingSkill {
   position: relative;
-  display: -ms-grid;
   display: grid;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   padding: 100px 45px 200px 45px;
-  -webkit-column-gap: 50px;
-          column-gap: 50px;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
   row-gap: 100px;
-  -ms-grid-columns: (300px)[4];
-      grid-template-columns: repeat(4, 300px);
+  grid-template-columns: repeat(4, 300px);
 }
 
 .skillcontainer {
   position: relative;
   display: block;
-  border-top: 3px solid #448663;
   width: 300px;
   height: 160px;
-  -webkit-box-shadow: 0px 2px 5px 0px #1f292e;
-          box-shadow: 0px 2px 5px 0px #1f292e;
+  box-shadow: 0px 2px 5px 0px rgb(31, 41, 46);
   background: rgba(242, 242, 242, 0.7);
   cursor: pointer;
 }
-
 .skillcontainer .lockedSkill {
   display: none;
 }
-
 .skillcontainer.locked {
   pointer-events: none;
 }
-
 .skillcontainer.locked .lockedSkill {
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   background-color: rgba(15, 41, 46, 0.95);
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-
 .skillcontainer.locked .lockedSkill .lockedTitle {
   position: relative;
   color: rgba(200, 205, 208, 0.5);
   font-size: 24px;
   line-height: 1;
 }
-
 .skillcontainer.locked .lockedSkill .lockedImage {
   position: absolute;
   width: 30%;
   opacity: 0.1;
-  -webkit-filter: invert(0.8);
-          filter: invert(0.8);
+  filter: invert(0.8);
 }
-
 .skillcontainer.locked .lockedSkill .lockedLvl {
   position: relative;
-  color: #c8cdd0;
+  color: rgb(200, 205, 208);
   font-size: 14px;
 }
 
 .itemWrapping {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
   height: 100%;
   width: 100%;
 }
-
 .itemWrapping img {
   position: relative;
   width: 150px;
@@ -504,12 +405,10 @@ header {
   display: block;
   bottom: -50px;
   left: 50%;
-  -webkit-transform: translatex(-50%);
-          transform: translatex(-50%);
-  color: #f2f2f2;
+  transform: translatex(-50%);
+  color: rgb(242, 242, 242);
   opacity: 0;
 }
-
 .itemNotif img {
   position: relative;
   display: inline-block;
@@ -519,7 +418,6 @@ header {
      object-fit: contain;
   vertical-align: middle;
 }
-
 .itemNotif p {
   position: relative;
   display: inline-block;
@@ -528,20 +426,10 @@ header {
 }
 
 .itemNotif.itemCollected {
-  -webkit-animation: itemCollected 1.2s cubic-bezier(0.4, 0, 0.2, 1);
-          animation: itemCollected 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+  animation: itemCollected 1.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* NOTIF ANIMATION */
-@-webkit-keyframes itemCollected {
-  85% {
-    opacity: 1;
-    bottom: -30px;
-  }
-  90% {
-    opacity: 0;
-  }
-}
 @keyframes itemCollected {
   85% {
     opacity: 1;
@@ -551,15 +439,12 @@ header {
     opacity: 0;
   }
 }
-
 #skillPage {
   position: relative;
-  background-image: url("../../images/backgrounds/woodcutting_background.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
 }
-
 #skillPage:before {
   content: "";
   position: absolute;
@@ -567,7 +452,7 @@ header {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(68, 134, 99, 0.8);
+  opacity: 0.8;
 }
 
 .itemData {
@@ -575,19 +460,16 @@ header {
   display: block;
   text-align: center;
 }
-
 .itemData h3 {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 100;
   font-size: 24px;
 }
-
 .itemData p:first-of-type {
   font-size: 14px;
   line-height: 1;
 }
-
 .itemData p:last-of-type {
   margin-top: 30px;
 }
@@ -596,15 +478,115 @@ header {
   position: relative;
   display: block;
   width: 125px;
-  border: 2px solid #415058;
+  border: 2px solid rgb(65, 80, 88);
   height: 15px;
   background-color: transparent;
+  margin: 0 auto;
 }
 
 .intervalBar {
   height: inherit;
   width: 0%;
+}
+
+/* Tabs */
+.miningNav {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+.miningNav .miningTab {
+  background: transparent;
+  border: 0;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: white;
+  cursor: pointer;
+  padding: 7px;
+}
+.miningNav .miningTab:first-of-type {
+  margin-right: 75px;
+}
+.miningNav .miningTab.activeTab {
+  background-color: rgb(65, 80, 88);
+  border-top: 2px solid #d6b300;
+}
+.miningNav .miningTabIcon {
+  display: inline-block;
+  width: 40px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+/* Changes colours depending on page */
+.woodcuttingPage #innerBanner,
+.woodcuttingPage .intervalBar {
   background-color: #448663;
+}
+.woodcuttingPage .skillcontainer {
+  border-top: 3px solid #448663;
+}
+.woodcuttingPage #skillPage {
+  background-image: url("../../images/backgrounds/woodcutting_background.png");
+}
+.woodcuttingPage #skillPage:before {
+  background: #448663;
+}
+
+.miningPage #innerBanner,
+.miningPage .intervalBar {
+  background-color: #1f292e;
+}
+.miningPage .skillcontainer {
+  border-top: 3px solid #1f292e;
+}
+.miningPage #skillPage {
+  background-image: url("../../images/backgrounds/mining_background.png");
+}
+.miningPage #skillPage:before {
+  background: #1f292e;
+}
+
+.excavationPage #innerBanner,
+.excavationPage .intervalBar {
+  background-color: #848165;
+}
+.excavationPage .skillcontainer {
+  border-top: 3px solid #848165;
+}
+.excavationPage #skillPage {
+  background-image: url("../../images/backgrounds/excavation_background.jpg");
+}
+.excavationPage #skillPage:before {
+  background: #848165;
+}
+
+.fishingPage #innerBanner,
+.fishingPage .intervalBar {
+  background-color: #3c6884;
+}
+.fishingPage .skillcontainer {
+  border-top: 3px solid #3c6884;
+}
+.fishingPage #skillPage {
+  background-image: url("../../images/backgrounds/fishing_background.jpg");
+}
+.fishingPage #skillPage:before {
+  background: #3c6884;
+}
+.fishingPage #fishingloottable {
+  width: 1000px;
+}
+.fishingPage .itemData p:nth-of-type(2) {
+  font-size: 14px;
+  line-height: 1;
+  margin-top: 5px;
+}
+.fishingPage .itemData p:last-of-type {
+  margin-top: 20px;
 }
 
 * {
@@ -618,12 +600,10 @@ header {
   font-family: "Hind";
   src: url("/font/Hind-Regular.ttf");
 }
-
 @font-face {
   font-family: "minecraft";
   src: url("/font/VT323-Regular.ttf");
 }
-
 p,
 h2 {
   font-variant: small-caps;
@@ -631,5 +611,4 @@ h2 {
 
 h3 {
   font-family: "minecraft";
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

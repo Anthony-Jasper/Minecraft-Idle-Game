@@ -9,14 +9,17 @@
 <!--     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
 </head>
 <body>
+	<!-- HEADER -->
     <header>
+			<!-- STORAGE -->
 			<div id="storage" onclick="grabSkill(event)">
 				<img id="storageAnim" src="/images/Storage.png" alt="" srcset="">
 				<p class="skillName">storage</p>
 			</div>
-
+			<!-- SKILL MENU -->
 			<nav id="skillSelection">
 				<ul>
+					<!-- WOODCUTTING -->
 					<li class="skill" id="skillWoodcutting" onclick="grabSkill(event)">
 						<div class="skillSkew">
 							<div class="skillOverlay"></div>
@@ -26,7 +29,7 @@
 						<p class="skillName">woodcutting</p>
 						<p class="skillLevel">25/99</p>
 					</li>
-
+					<!-- MINING -->
 					<li class="skill" id="skillMining" onclick="grabSkill(event)">
 						<div class="skillSkew">
 							<div class="skillOverlay"></div>
@@ -36,7 +39,7 @@
 						<p class="skillName">mining</p>
 						<p class="skillLevel">25/99</p>
 					</li>
-
+					<!-- EXCAVATION -->
 					<li class="skill" id="skillExcavation" onclick="grabSkill(event)">
 						<div class="skillSkew">
 							<div class="skillOverlay"></div>
@@ -46,7 +49,7 @@
 						<p class="skillName">excavation</p>
 						<p class="skillLevel">25/99</p>
 					</li>
-
+					<!-- FISHING -->
 					<li class="skill" id="skillFishing" onclick="grabSkill(event)">
 						<div class="skillSkew">
 							<div class="skillOverlay"></div>
@@ -56,7 +59,7 @@
 						<p class="skillName">fishing</p>
 						<p class="skillLevel">25/99</p>
 					</li>
-
+					<!-- BUILDING -->
 					<li class="skill" id="skillBuilding" onclick="grabSkill(event)">
 						<div class="skillSkew">
 							<div class="skillOverlay"></div>
@@ -66,7 +69,7 @@
 						<p class="skillName">building</p>
 						<p class="skillLevel">25/99</p>
 					</li>
-
+					<!-- FARMING -->
 					<li class="skill" id="skillFarming" onclick="grabSkill(event)">
 						<div class="skillSkew">
 							<div class="skillOverlay"></div>
@@ -76,7 +79,7 @@
 						<p class="skillName">farming</p>
 						<p class="skillLevel">25/99</p>
 					</li>
-
+					<!-- SMELTING -->
 					<li class="skill" id="skillSmelting" onclick="grabSkill(event)">
 						<div class="skillSkew">
 							<div class="skillOverlay"></div>
@@ -86,7 +89,7 @@
 						<p class="skillName">smelting</p>
 						<p class="skillLevel">25/99</p>
 					</li>
-
+					<!-- CRAFTING -->
 					<li class="skill" id="skillCrafting" onclick="grabSkill(event)">
 						<div class="skillSkew">
 							<div class="skillOverlay"></div>
@@ -96,7 +99,7 @@
 						<p class="skillName">crafting</p>
 						<p class="skillLevel">25/99</p>
 					</li>
-
+					<!-- COMBAT -->
 					<li class="skill" id="skillCombat" onclick="grabSkill(event)">
 						<div class="skillSkew">
 							<div class="skillOverlay"></div>
@@ -106,7 +109,7 @@
 						<p class="skillName">combat</p>
 						<p class="skillLevel">25/99</p>
 					</li>
-
+					<!-- ENCHANTING -->
 					<li class="skill" id="skillEnchanting" onclick="grabSkill(event)">
 						<div class="skillSkew">
 							<div class="skillOverlay"></div>
@@ -116,7 +119,7 @@
 						<p class="skillName">enchanting</p>
 						<p class="skillLevel">25/99</p>
 					</li>
-
+					<!-- TAMING -->
 					<li class="skill" id="skillTaming" onclick="grabSkill(event)">
 						<div class="skillSkew">
 							<div class="skillOverlay"></div>
@@ -128,13 +131,14 @@
 					</li>
 				</ul>
 			</nav>
-
+			<!-- SHOP -->
 			<div id="shop" onclick="grabSkill(event)">
 				<img src="/images/shop.png" alt="" srcset="">
 				<p class="skillName">shop</p>
 			</div>
     </header>
-    <main>
+		<!-- UI - ACHIEVEMENTS AND WORLDS -->
+    <main id="wrapper">
 			<div id="achievements" onclick="">
 				<img src="/images/Achievements.png" alt="" srcset="">
 			</div>
@@ -152,8 +156,10 @@
 					<p>the end</p>
 				</div>
 			</div>
-			<section id="innerScreen">
 
+			<!-- ACTIVE SKILL -->
+			<section id="innerScreen">
+				<!-- LEVELS AND PROGRESS -->
 				<div id="innerBanner">
 					<div>
 						<img id="innerLogo" src="images/icons/woodcutting.png" alt="" srcset="">
@@ -165,7 +171,7 @@
 						<progress id="innerBar" value="0" max="100"></progress>
 					</div>
 				</div>
-
+				<!-- HOTBAR -->
 				<div id="innerHotbarWrapper">
 					<p id="hotbarNotif">equipped : fox</p>
 
@@ -186,7 +192,7 @@
 							<img class="hotbarLogo" src="images/icons/woodcutting.png" alt="" srcset="">
 						</div>
 					</div>
-
+					<!-- STAMINA -->
 					<div id="stamina">
 						<progress id="staminaBar" value="50" max="100"></progress>
 						<img class="staminaBarLogo" src="images/stamina_icon.png" alt="" srcset="">
@@ -203,6 +209,7 @@
 					
 				</div>
 			</section>
+			
 			<section id="skillPage">
 				<!-- Inject Skill -->
 			</section>
@@ -210,6 +217,17 @@
 </body>
 <script type="text/javascript" src="woodcutting.js" async="async"></script>
 <script type="text/javascript" src="mining.js" async="async"></script>
+<script type="text/javascript" src="excavation.js" async="async"></script>
+<script type="text/javascript" src="fishing.js" async="async"></script>
 <script type="text/javascript" src="general.js" async="async"></script>
 
 </html>
+<!-- TODO : Fishing
+
+1st Roll : Junk, Treasure, Fish
+	If Fish : 
+
+	Do we cook the last 3 fish??
+
+	var randomNumber = Math.floor(Math.random() * totalWeight + 1);
+-->

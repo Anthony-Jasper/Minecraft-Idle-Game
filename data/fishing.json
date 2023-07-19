@@ -1,0 +1,91 @@
+{
+	"plains" : [{
+		"name" : "Plains",
+		"lvlrequirement" : 1,
+		"interval" : 30,
+		"durability" : 6,
+		"experience" : 56,
+		"imageSRC" : "images/fishing/Water.png",
+		"junk" : 43
+	}],
+
+	"river" : [{
+		"name" : "River",
+		"lvlrequirement" : 10,
+		"interval" : 30,
+		"durability" : 6,
+		"experience" : 58,
+		"imageSRC" : "images/fishing/Water.png",
+		"junk" : 42
+	}],
+	
+	"spruceforest" : [{
+		"name" : "Spruce Forest",
+		"lvlrequirement" : 20,
+		"interval" : 30,
+		"durability" : 6,
+		"experience" : 185,
+		"imageSRC" : "images/fishing/Water.png",
+		"junk" : 33
+	}],
+
+	"mountains" : [{
+		"name" : "Mountains",
+		"lvlrequirement" : 35,
+		"interval" : 30,
+		"durability" : 6,
+		"experience" : 185,
+		"imageSRC" : "images/fishing/Water.png",
+		"junk" : 33
+	}],
+
+	"jungle" : [{
+		"name" : "Jungle",
+		"lvlrequirement" : 45,
+		"interval" : 30,
+		"durability" : 6,
+		"experience" : 189,
+		"imageSRC" : "images/fishing/Water.png",
+		"junk" : 33
+	}],
+
+	"desert" : [{
+		"name" : "Desert",
+		"lvlrequirement" : 50,
+		"interval" : 30,
+		"durability" : 6,
+		"experience" : 195,
+		"imageSRC" : "images/fishing/Water.png",
+		"junk" : 33
+	}],
+
+	"ocean" : [{
+		"name" : "Ocean",
+		"lvlrequirement" : 65,
+		"interval" : 30,
+		"durability" : 6,
+		"experience" : 181,
+		"imageSRC" : "images/fishing/Water.png",
+		"junk" : 32
+	}],
+
+	"nether" : [{
+		"name" : "Nether",
+		"lvlrequirement" : 75,
+		"interval" : 30,
+		"durability" : 6,
+		"experience" : 182,
+		"imageSRC" : "images/fishing/Lava.png",
+		"junk" : 27
+	}],
+
+	"end" : [{
+		"name" : "End",
+		"lvlrequirement" : 90,
+		"interval" : 30,
+		"durability" : 6,
+		"experience" : 455,
+		"imageSRC" : "images/fishing/End_Water.png",
+		"junk" : 26
+	}]
+}

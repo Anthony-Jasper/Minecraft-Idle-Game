@@ -6,5 +6,25 @@
 	"acacialogValue" : 5,
 	"darkoaklogValue" : 7,
 	"crimsonlogValue" : 12,
-	"warpedlogValue" : 18
+	"warpedlogValue" : 18,
+
+	"stoneValue" : 1,
+	"sandstoneValue" : 1,
+	"coalValue" : 2,
+	"ironValue" : 3,
+	"lapisValue" : 4,
+	"redstoneValue" : 4,
+	"emeraldValue" : 6,
+	"goldValue" : 7,
+	"diamondValue" : 8,
+	"obsidianValue" : 20,
+	"basaltValue" : 20,
+	"blackstoneValue" : 20,
+	"cryingobsidianValue" : 23,
+	"netherackValue" : 25,
+	"glowstoneValue" : 27,
+	"quartzValue" : 29,
+	"endstoneValue" : 23,
+	"purpurValue" : 31,
+	"ancientdebrisValue" : 43
 }

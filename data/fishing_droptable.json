@@ -1,0 +1,1064 @@
+{
+	"plainsdroptable" : [{
+		"cod" : [{
+			"name" : "Raw Cod",
+			"experience" : 10,
+			"chance" : 50,
+			"notifSRC" : "images/fishing/Raw_Cod.png",
+			"notiftext" : "Raw Cod"
+		}],
+		"emerald" : [{
+			"name" : "Emerald",
+			"experience" : 5000,
+			"chance" : 1,
+			"notifSRC" : "images/fishing/Emerald.png",
+			"notiftext" : "Emerald"
+		}],
+		"woodenfishingrod" : [{
+			"name" : "Wooden Fishing Rod",
+			"experience" : 1,
+			"chance" : 3,
+			"notifSRC" : "images/fishing/Fishing_Rod.png",
+			"notiftext" : "Wooden Fishing Rod"
+		}],
+		"stonefishingrod" : [{
+			"name" : "Stone Fishing Rod",
+			"experience" : 10,
+			"chance" : 2,
+			"notifSRC" : "images/fishing/Stone_Fishing_Rod.png",
+			"notiftext" : "Stone Fishing Rod"
+		}],
+		"ironfishingrod" : [{
+			"name" : "Iron Fishing Rod",
+			"experience" : 20,
+			"chance" : 1,
+			"notifSRC" : "images/fishing/Iron_Fishing_Rod.png",
+			"notiftext" : "Iron Fishing Rod"
+		}],
+		"oldboots" : [{
+			"name" : "Old Boots",
+			"experience" : 1,
+			"chance" : 9,
+			"notifSRC" : "images/fishing/Leather_Boots.png",
+			"notiftext" : "Old Boots"
+		}],
+		"string" : [{
+			"name" : "String",
+			"experience" : 1,
+			"chance" : 9,
+			"notifSRC" : "images/fishing/String.png",
+			"notiftext" : "String"
+		}],
+		"stick" : [{
+			"name" : "Stick",
+			"experience" : 1,
+			"chance" : 8,
+			"notifSRC" : "images/fishing/Stick.png",
+			"notiftext" : "Stick"
+		}],
+		"bowl" : [{
+			"name" : "Bowl",
+			"experience" : 1,
+			"chance" : 8,
+			"notifSRC" : "images/fishing/Bowl.png",
+			"notiftext" : "Bowl"
+		}],
+		"rottingflesh" : [{
+			"name" : "Rotting Flesh",
+			"experience" : 1,
+			"chance" : 9,
+			"notifSRC" : "images/fishing/Rotten_Flesh.png",
+			"notiftext" : "Rotting Flesh"
+		}]
+	}],
+
+	"riverdroptable" : [{
+		"cod" : [{
+			"name" : "Raw Cod",
+			"experience" : 10,
+			"chance" : 40,
+			"notifSRC" : "images/fishing/Raw_Cod.png",
+			"notiftext" : "Raw Cod"
+		}],
+		"salmon" : [{
+			"name" : "Raw Salmon",
+			"experience" : 25,
+			"chance" : 10,
+			"notifSRC" : "images/fishing/Raw_Salmon.png",
+			"notiftext" : "Raw Salmon"
+		}],
+		"emerald" : [{
+			"name" : "Emerald",
+			"experience" : 5000,
+			"chance" : 1,
+			"notifSRC" : "images/fishing/Emerald.png",
+			"notiftext" : "Emerald"
+		}],
+		"woodenfishingrod" : [{
+			"name" : "Wooden Fishing Rod",
+			"experience" : 1,
+			"chance" : 3,
+			"notifSRC" : "images/fishing/Fishing_Rod.png",
+			"notiftext" : "Wooden Fishing Rod"
+		}],
+		"stonefishingrod" : [{
+			"name" : "Stone Fishing Rod",
+			"experience" : 10,
+			"chance" : 2,
+			"notifSRC" : "images/fishing/Stone_Fishing_Rod.png",
+			"notiftext" : "Stone Fishing Rod"
+		}],
+		"ironfishingrod" : [{
+			"name" : "Iron Fishing Rod",
+			"experience" : 20,
+			"chance" : 1,
+			"notifSRC" : "images/fishing/Iron_Fishing_Rod.png",
+			"notiftext" : "Iron Fishing Rod"
+		}],
+		"lilypad" : [{
+			"name" : "Lily Pad",
+			"experience" : 50,
+			"chance" : 1,
+			"notifSRC" : "images/fishing/Lily_Pad.png",
+			"notiftext" : "Lily Pad"
+		}],
+		"oldboots" : [{
+			"name" : "Old Boots",
+			"experience" : 1,
+			"chance" : 8,
+			"notifSRC" : "images/fishing/Leather_Boots.png",
+			"notiftext" : "Old Boots"
+		}],
+		"string" : [{
+			"name" : "String",
+			"experience" : 1,
+			"chance" : 9,
+			"notifSRC" : "images/fishing/String.png",
+			"notiftext" : "String"
+		}],
+		"stick" : [{
+			"name" : "Stick",
+			"experience" : 1,
+			"chance" : 8,
+			"notifSRC" : "images/fishing/Stick.png",
+			"notiftext" : "Stick"
+		}],
+		"bowl" : [{
+			"name" : "Bowl",
+			"experience" : 1,
+			"chance" : 8,
+			"notifSRC" : "images/fishing/Bowl.png",
+			"notiftext" : "Bowl"
+		}],
+		"rottingflesh" : [{
+			"name" : "Rotting Flesh",
+			"experience" : 1,
+			"chance" : 9,
+			"notifSRC" : "images/fishing/Rotten_Flesh.png",
+			"notiftext" : "Rotting Flesh"
+		}]
+	}],
+	
+	"spruceforestdroptable" : [{
+		"cod" : [{
+			"name" : "Raw Cod",
+			"experience" : 10,
+			"chance" : 40,
+			"notifSRC" : "images/fishing/Raw_Cod.png",
+			"notiftext" : "Raw Cod"
+		}],
+		"salmon" : [{
+			"name" : "Raw Salmon",
+			"experience" : 25,
+			"chance" : 10,
+			"notifSRC" : "images/fishing/Raw_Salmon.png",
+			"notiftext" : "Raw Salmon"
+		}],
+		"emerald" : [{
+			"name" : "Emerald",
+			"experience" : 5000,
+			"chance" : 1,
+			"notifSRC" : "images/fishing/Emerald.png",
+			"notiftext" : "Emerald"
+		}],
+		"woodenfishingrod" : [{
+			"name" : "Wooden Fishing Rod",
+			"experience" : 1,
+			"chance" : 3,
+			"notifSRC" : "images/fishing/Fishing_Rod.png",
+			"notiftext" : "Wooden Fishing Rod"
+		}],
+		"stonefishingrod" : [{
+			"name" : "Stone Fishing Rod",
+			"experience" : 10,
+			"chance" : 2,
+			"notifSRC" : "images/fishing/Stone_Fishing_Rod.png",
+			"notiftext" : "Stone Fishing Rod"
+		}],
+		"ironfishingrod" : [{
+			"name" : "Iron Fishing Rod",
+			"experience" : 20,
+			"chance" : 1,
+			"notifSRC" : "images/fishing/Iron_Fishing_Rod.png",
+			"notiftext" : "Iron Fishing Rod"
+		}],
+		"lilypad" : [{
+			"name" : "Lily Pad",
+			"experience" : 50,
+			"chance" : 5,
+			"notifSRC" : "images/fishing/Lily_Pad.png",
+			"notiftext" : "Lily Pad"
+		}],
+		"saddle" : [{
+			"name" : "Saddle",
+			"experience" : 2500,
+			"chance" : 5,
+			"notifSRC" : "images/fishing/Saddle.png",
+			"notiftext" : "Saddle"
+		}],
+		"oldboots" : [{
+			"name" : "Old Boots",
+			"experience" : 1,
+			"chance" : 7,
+			"notifSRC" : "images/fishing/Leather_Boots.png",
+			"notiftext" : "Old Boots"
+		}],
+		"string" : [{
+			"name" : "String",
+			"experience" : 1,
+			"chance" : 7,
+			"notifSRC" : "images/fishing/String.png",
+			"notiftext" : "String"
+		}],
+		"stick" : [{
+			"name" : "Stick",
+			"experience" : 1,
+			"chance" : 6,
+			"notifSRC" : "images/fishing/Stick.png",
+			"notiftext" : "Stick"
+		}],
+		"bowl" : [{
+			"name" : "Bowl",
+			"experience" : 1,
+			"chance" : 6,
+			"notifSRC" : "images/fishing/Bowl.png",
+			"notiftext" : "Bowl"
+		}],
+		"rottingflesh" : [{
+			"name" : "Rotting Flesh",
+			"experience" : 1,
+			"chance" : 7,
+			"notifSRC" : "images/fishing/Rotten_Flesh.png",
+			"notiftext" : "Rotting Flesh"
+		}]
+	}],
+
+	"mountainsdroptable" : [{
+		"cod" : [{
+			"name" : "Raw Cod",
+			"experience" : 10,
+			"chance" : 40,
+			"notifSRC" : "images/fishing/Raw_Cod.png",
+			"notiftext" : "Raw Cod"
+		}],
+		"salmon" : [{
+			"name" : "Raw Salmon",
+			"experience" : 25,
+			"chance" : 10,
+			"notifSRC" : "images/fishing/Raw_Salmon.png",
+			"notiftext" : "Raw Salmon"
+		}],
+		"emerald" : [{
+			"name" : "Emerald",
+			"experience" : 5000,
+			"chance" : 1,
+			"notifSRC" : "images/fishing/Emerald.png",
+			"notiftext" : "Emerald"
+		}],
+		"woodenfishingrod" : [{
+			"name" : "Wooden Fishing Rod",
+			"experience" : 1,
+			"chance" : 3,
+			"notifSRC" : "images/fishing/Fishing_Rod.png",
+			"notiftext" : "Wooden Fishing Rod"
+		}],
+		"stonefishingrod" : [{
+			"name" : "Stone Fishing Rod",
+			"experience" : 10,
+			"chance" : 2,
+			"notifSRC" : "images/fishing/Stone_Fishing_Rod.png",
+			"notiftext" : "Stone Fishing Rod"
+		}],
+		"ironfishingrod" : [{
+			"name" : "Iron Fishing Rod",
+			"experience" : 20,
+			"chance" : 1,
+			"notifSRC" : "images/fishing/Iron_Fishing_Rod.png",
+			"notiftext" : "Iron Fishing Rod"
+		}],
+		"lilypad" : [{
+			"name" : "Lily Pad",
+			"experience" : 50,
+			"chance" : 5,
+			"notifSRC" : "images/fishing/Lily_Pad.png",
+			"notiftext" : "Lily Pad"
+		}],
+		"nametag" : [{
+			"name" : "Name Tag",
+			"experience" : 2500,
+			"chance" : 2,
+			"notifSRC" : "images/fishing/Name_Tag.png",
+			"notiftext" : "Name Tag"
+		}],
+		"saddle" : [{
+			"name" : "Saddle",
+			"experience" : 2500,
+			"chance" : 3,
+			"notifSRC" : "images/fishing/Saddle.png",
+			"notiftext" : "Saddle"
+		}],
+		"oldboots" : [{
+			"name" : "Old Boots",
+			"experience" : 1,
+			"chance" : 7,
+			"notifSRC" : "images/fishing/Leather_Boots.png",
+			"notiftext" : "Old Boots"
+		}],
+		"string" : [{
+			"name" : "String",
+			"experience" : 1,
+			"chance" : 7,
+			"notifSRC" : "images/fishing/String.png",
+			"notiftext" : "String"
+		}],
+		"stick" : [{
+			"name" : "Stick",
+			"experience" : 1,
+			"chance" : 6,
+			"notifSRC" : "images/fishing/Stick.png",
+			"notiftext" : "Stick"
+		}],
+		"bowl" : [{
+			"name" : "Bowl",
+			"experience" : 1,
+			"chance" : 6,
+			"notifSRC" : "images/fishing/Bowl.png",
+			"notiftext" : "Bowl"
+		}],
+		"rottingflesh" : [{
+			"name" : "Rotting Flesh",
+			"experience" : 1,
+			"chance" : 7,
+			"notifSRC" : "images/fishing/Rotten_Flesh.png",
+			"notiftext" : "Rotting Flesh"
+		}]
+	}],
+
+	"jungledroptable" : [{
+		"cod" : [{
+			"name" : "Raw Cod",
+			"experience" : 10,
+			"chance" : 30,
+			"notifSRC" : "images/fishing/Raw_Cod.png",
+			"notiftext" : "Raw Cod"
+		}],
+		"salmon" : [{
+			"name" : "Raw Salmon",
+			"experience" : 25,
+			"chance" : 10,
+			"notifSRC" : "images/fishing/Raw_Salmon.png",
+			"notiftext" : "Raw Salmon"
+		}],
+		"tropical" : [{
+			"name" : "Tropical Fish",
+			"experience" : 50,
+			"chance" : 10,
+			"notifSRC" : "images/fishing/Clownfish.png",
+			"notiftext" : "Tropical Fish"
+		}],
+		"emerald" : [{
+			"name" : "Emerald",
+			"experience" : 5000,
+			"chance" : 1,
+			"notifSRC" : "images/fishing/Emerald.png",
+			"notiftext" : "Emerald"
+		}],
+		"woodenfishingrod" : [{
+			"name" : "Wooden Fishing Rod",
+			"experience" : 1,
+			"chance" : 3,
+			"notifSRC" : "images/fishing/Fishing_Rod.png",
+			"notiftext" : "Wooden Fishing Rod"
+		}],
+		"stonefishingrod" : [{
+			"name" : "Stone Fishing Rod",
+			"experience" : 10,
+			"chance" : 2,
+			"notifSRC" : "images/fishing/Stone_Fishing_Rod.png",
+			"notiftext" : "Stone Fishing Rod"
+		}],
+		"ironfishingrod" : [{
+			"name" : "Iron Fishing Rod",
+			"experience" : 20,
+			"chance" : 1,
+			"notifSRC" : "images/fishing/Iron_Fishing_Rod.png",
+			"notiftext" : "Iron Fishing Rod"
+		}],
+		"lilypad" : [{
+			"name" : "Lily Pad",
+			"experience" : 50,
+			"chance" : 5,
+			"notifSRC" : "images/fishing/Lily_Pad.png",
+			"notiftext" : "Lily Pad"
+		}],
+		"nametag" : [{
+			"name" : "Name Tag",
+			"experience" : 2500,
+			"chance" : 2,
+			"notifSRC" : "images/fishing/Name_Tag.png",
+			"notiftext" : "Name Tag"
+		}],
+		"saddle" : [{
+			"name" : "Saddle",
+			"experience" : 2500,
+			"chance" : 3,
+			"notifSRC" : "images/fishing/Saddle.png",
+			"notiftext" : "Saddle"
+		}],
+		"oldboots" : [{
+			"name" : "Old Boots",
+			"experience" : 1,
+			"chance" : 7,
+			"notifSRC" : "images/fishing/Leather_Boots.png",
+			"notiftext" : "Old Boots"
+		}],
+		"string" : [{
+			"name" : "String",
+			"experience" : 1,
+			"chance" : 7,
+			"notifSRC" : "images/fishing/String.png",
+			"notiftext" : "String"
+		}],
+		"stick" : [{
+			"name" : "Stick",
+			"experience" : 1,
+			"chance" : 6,
+			"notifSRC" : "images/fishing/Stick.png",
+			"notiftext" : "Stick"
+		}],
+		"bowl" : [{
+			"name" : "Bowl",
+			"experience" : 1,
+			"chance" : 6,
+			"notifSRC" : "images/fishing/Bowl.png",
+			"notiftext" : "Bowl"
+		}],
+		"rottingflesh" : [{
+			"name" : "Rotting Flesh",
+			"experience" : 1,
+			"chance" : 7,
+			"notifSRC" : "images/fishing/Rotten_Flesh.png",
+			"notiftext" : "Rotting Flesh"
+		}]
+	}],
+
+	"desertdroptable" : [{
+		"cod" : [{
+			"name" : "Raw Cod",
+			"experience" : 10,
+			"chance" : 20,
+			"notifSRC" : "images/fishing/Raw_Cod.png",
+			"notiftext" : "Raw Cod"
+		}],
+		"salmon" : [{
+			"name" : "Raw Salmon",
+			"experience" : 25,
+			"chance" : 10,
+			"notifSRC" : "images/fishing/Raw_Salmon.png",
+			"notiftext" : "Raw Salmon"
+		}],
+		"tropical" : [{
+			"name" : "Tropical Fish",
+			"experience" : 50,
+			"chance" : 10,
+			"notifSRC" : "images/fishing/Clownfish.png",
+			"notiftext" : "Tropical Fish"
+		}],
+		"pufferfish" : [{
+			"name" : "Pufferfish",
+			"experience" : 75,
+			"chance" : 10,
+			"notifSRC" : "images/fishing/Pufferfish.png",
+			"notiftext" : "Pufferfish"
+		}],
+		"emerald" : [{
+			"name" : "Emerald",
+			"experience" : 5000,
+			"chance" : 1,
+			"notifSRC" : "images/fishing/Emerald.png",
+			"notiftext" : "Emerald"
+		}],
+		"woodenfishingrod" : [{
+			"name" : "Wooden Fishing Rod",
+			"experience" : 1,
+			"chance" : 2,
+			"notifSRC" : "images/fishing/Fishing_Rod.png",
+			"notiftext" : "Wooden Fishing Rod"
+		}],
+		"stonefishingrod" : [{
+			"name" : "Stone Fishing Rod",
+			"experience" : 10,
+			"chance" : 2,
+			"notifSRC" : "images/fishing/Stone_Fishing_Rod.png",
+			"notiftext" : "Stone Fishing Rod"
+		}],
+		"ironfishingrod" : [{
+			"name" : "Iron Fishing Rod",
+			"experience" : 20,
+			"chance" : 1,
+			"notifSRC" : "images/fishing/Iron_Fishing_Rod.png",
+			"notiftext" : "Iron Fishing Rod"
+		}],
+		"goldfishingrod" : [{
+			"name" : "Gold Fishing Rod",
+			"experience" : 30,
+			"chance" : 1,
+			"notifSRC" : "images/fishing/Gold_Fishing_Rod.png",
+			"notiftext" : "Gold Fishing Rod"
+		}],
+		"lilypad" : [{
+			"name" : "Lily Pad",
+			"experience" : 50,
+			"chance" : 5,
+			"notifSRC" : "images/fishing/Lily_Pad.png",
+			"notiftext" : "Lily Pad"
+		}],
+		"nametag" : [{
+			"name" : "Name Tag",
+			"experience" : 2500,
+			"chance" : 2,
+			"notifSRC" : "images/fishing/Name_Tag.png",
+			"notiftext" : "Name Tag"
+		}],
+		"saddle" : [{
+			"name" : "Saddle",
+			"experience" : 2500,
+			"chance" : 3,
+			"notifSRC" : "images/fishing/Saddle.png",
+			"notiftext" : "Saddle"
+		}],
+		"oldboots" : [{
+			"name" : "Old Boots",
+			"experience" : 1,
+			"chance" : 7,
+			"notifSRC" : "images/fishing/Leather_Boots.png",
+			"notiftext" : "Old Boots"
+		}],
+		"string" : [{
+			"name" : "String",
+			"experience" : 1,
+			"chance" : 7,
+			"notifSRC" : "images/fishing/String.png",
+			"notiftext" : "String"
+		}],
+		"stick" : [{
+			"name" : "Stick",
+			"experience" : 1,
+			"chance" : 6,
+			"notifSRC" : "images/fishing/Stick.png",
+			"notiftext" : "Stick"
+		}],
+		"bowl" : [{
+			"name" : "Bowl",
+			"experience" : 1,
+			"chance" : 6,
+			"notifSRC" : "images/fishing/Bowl.png",
+			"notiftext" : "Bowl"
+		}],
+		"rottingflesh" : [{
+			"name" : "Rotting Flesh",
+			"experience" : 1,
+			"chance" : 7,
+			"notifSRC" : "images/fishing/Rotten_Flesh.png",
+			"notiftext" : "Rotting Flesh"
+		}]
+	}],
+
+	"oceandroptable" : [{
+		"cod" : [{
+			"name" : "Raw Cod",
+			"experience" : 10,
+			"chance" : 10,
+			"notifSRC" : "images/fishing/Raw_Cod.png",
+			"notiftext" : "Raw Cod"
+		}],
+		"salmon" : [{
+			"name" : "Raw Salmon",
+			"experience" : 25,
+			"chance" : 10,
+			"notifSRC" : "images/fishing/Raw_Salmon.png",
+			"notiftext" : "Raw Salmon"
+		}],
+		"tropical" : [{
+			"name" : "Tropical Fish",
+			"experience" : 50,
+			"chance" : 10,
+			"notifSRC" : "images/fishing/Clownfish.png",
+			"notiftext" : "Tropical Fish"
+		}],
+		"pufferfish" : [{
+			"name" : "Pufferfish",
+			"experience" : 75,
+			"chance" : 10,
+			"notifSRC" : "images/fishing/Pufferfish.png",
+			"notiftext" : "Pufferfish"
+		}],
+		"squid" : [{
+			"name" : "Squid",
+			"experience" : 100,
+			"chance" : 10,
+			"notifSRC" : "images/fishing/Squid.png",
+			"notiftext" : "Squid"
+		}],
+		"emerald" : [{
+			"name" : "Emerald",
+			"experience" : 5000,
+			"chance" : 1,
+			"notifSRC" : "images/fishing/Emerald.png",
+			"notiftext" : "Emerald"
+		}],
+		"woodenfishingrod" : [{
+			"name" : "Wooden Fishing Rod",
+			"experience" : 1,
+			"chance" : 2,
+			"notifSRC" : "images/fishing/Fishing_Rod.png",
+			"notiftext" : "Wooden Fishing Rod"
+		}],
+		"stonefishingrod" : [{
+			"name" : "Stone Fishing Rod",
+			"experience" : 10,
+			"chance" : 2,
+			"notifSRC" : "images/fishing/Stone_Fishing_Rod.png",
+			"notiftext" : "Stone Fishing Rod"
+		}],
+		"ironfishingrod" : [{
+			"name" : "Iron Fishing Rod",
+			"experience" : 20,
+			"chance" : 1,
+			"notifSRC" : "images/fishing/Iron_Fishing_Rod.png",
+			"notiftext" : "Iron Fishing Rod"
+		}],
+		"goldfishingrod" : [{
+			"name" : "Gold Fishing Rod",
+			"experience" : 30,
+			"chance" : 1,
+			"notifSRC" : "images/fishing/Gold_Fishing_Rod.png",
+			"notiftext" : "Gold Fishing Rod"
+		}],
+		"diamondfishingrod" : [{
+			"name" : "Diamond Fishing Rod",
+			"experience" : 40,
+			"chance" : 1,
+			"notifSRC" : "images/fishing/Diamond_Fishing_Rod.png",
+			"notiftext" : "Diamond Fishing Rod"
+		}],
+		"lilypad" : [{
+			"name" : "Lily Pad",
+			"experience" : 50,
+			"chance" : 4,
+			"notifSRC" : "images/fishing/Lily_Pad.png",
+			"notiftext" : "Lily Pad"
+		}],
+		"nautilusshell" : [{
+			"name" : "Nautilus Shell",
+			"experience" : 10000,
+			"chance" : 1,
+			"notifSRC" : "images/fishing/Nautilus_Shell.png",
+			"notiftext" : "Nautilus Shell"
+		}],
+		"nametag" : [{
+			"name" : "Name Tag",
+			"experience" : 2500,
+			"chance" : 2,
+			"notifSRC" : "images/fishing/Name_Tag.png",
+			"notiftext" : "Name Tag"
+		}],
+		"saddle" : [{
+			"name" : "Saddle",
+			"experience" : 2500,
+			"chance" : 3,
+			"notifSRC" : "images/fishing/Saddle.png",
+			"notiftext" : "Saddle"
+		}],
+		"oldboots" : [{
+			"name" : "Old Boots",
+			"experience" : 1,
+			"chance" : 6,
+			"notifSRC" : "images/fishing/Leather_Boots.png",
+			"notiftext" : "Old Boots"
+		}],
+		"string" : [{
+			"name" : "String",
+			"experience" : 1,
+			"chance" : 7,
+			"notifSRC" : "images/fishing/String.png",
+			"notiftext" : "String"
+		}],
+		"stick" : [{
+			"name" : "Stick",
+			"experience" : 1,
+			"chance" : 6,
+			"notifSRC" : "images/fishing/Stick.png",
+			"notiftext" : "Stick"
+		}],
+		"bowl" : [{
+			"name" : "Bowl",
+			"experience" : 1,
+			"chance" : 6,
+			"notifSRC" : "images/fishing/Bowl.png",
+			"notiftext" : "Bowl"
+		}],
+		"rottingflesh" : [{
+			"name" : "Rotting Flesh",
+			"experience" : 1,
+			"chance" : 7,
+			"notifSRC" : "images/fishing/Rotten_Flesh.png",
+			"notiftext" : "Rotting Flesh"
+		}]
+	}],
+
+	"netherdroptable" : [{
+		"cod" : [{
+			"name" : "Raw Cod",
+			"experience" : 10,
+			"chance" : 10,
+			"notifSRC" : "images/fishing/Raw_Cod.png",
+			"notiftext" : "Raw Cod"
+		}],
+		"salmon" : [{
+			"name" : "Raw Salmon",
+			"experience" : 25,
+			"chance" : 10,
+			"notifSRC" : "images/fishing/Raw_Salmon.png",
+			"notiftext" : "Raw Salmon"
+		}],
+		"tropical" : [{
+			"name" : "Tropical Fish",
+			"experience" : 50,
+			"chance" : 10,
+			"notifSRC" : "images/fishing/Clownfish.png",
+			"notiftext" : "Tropical Fish"
+		}],
+		"pufferfish" : [{
+			"name" : "Pufferfish",
+			"experience" : 75,
+			"chance" : 10,
+			"notifSRC" : "images/fishing/Pufferfish.png",
+			"notiftext" : "Pufferfish"
+		}],
+		"squid" : [{
+			"name" : "Squid",
+			"experience" : 100,
+			"chance" : 10,
+			"notifSRC" : "images/fishing/Squid.png",
+			"notiftext" : "Squid"
+		}],
+		"emerald" : [{
+			"name" : "Emerald",
+			"experience" : 5000,
+			"chance" : 1,
+			"notifSRC" : "images/fishing/Emerald.png",
+			"notiftext" : "Emerald"
+		}],
+		"woodenfishingrod" : [{
+			"name" : "Wooden Fishing Rod",
+			"experience" : 1,
+			"chance" : 2,
+			"notifSRC" : "images/fishing/Fishing_Rod.png",
+			"notiftext" : "Wooden Fishing Rod"
+		}],
+		"stonefishingrod" : [{
+			"name" : "Stone Fishing Rod",
+			"experience" : 10,
+			"chance" : 2,
+			"notifSRC" : "images/fishing/Stone_Fishing_Rod.png",
+			"notiftext" : "Stone Fishing Rod"
+		}],
+		"ironfishingrod" : [{
+			"name" : "Iron Fishing Rod",
+			"experience" : 20,
+			"chance" : 1,
+			"notifSRC" : "images/fishing/Iron_Fishing_Rod.png",
+			"notiftext" : "Iron Fishing Rod"
+		}],
+		"goldfishingrod" : [{
+			"name" : "Gold Fishing Rod",
+			"experience" : 30,
+			"chance" : 1,
+			"notifSRC" : "images/fishing/Gold_Fishing_Rod.png",
+			"notiftext" : "Gold Fishing Rod"
+		}],
+		"diamondfishingrod" : [{
+			"name" : "Diamond Fishing Rod",
+			"experience" : 40,
+			"chance" : 1,
+			"notifSRC" : "images/fishing/Diamond_Fishing_Rod.png",
+			"notiftext" : "Diamond Fishing Rod"
+		}],
+		"netheritefishingrod" : [{
+			"name" : "Netherite Fishing Rod",
+			"experience" : 50,
+			"chance" : 1,
+			"notifSRC" : "images/fishing/Netherite_Fishing_Rod.png",
+			"notiftext" : "Netherite Fishing Rod"
+		}],
+		"lilypad" : [{
+			"name" : "Lily Pad",
+			"experience" : 50,
+			"chance" : 5,
+			"notifSRC" : "images/fishing/Lily_Pad.png",
+			"notiftext" : "Lily Pad"
+		}],
+		"nautilusshell" : [{
+			"name" : "Nautilus Shell",
+			"experience" : 10000,
+			"chance" : 1,
+			"notifSRC" : "images/fishing/Nautilus_Shell.png",
+			"notiftext" : "Nautilus Shell"
+		}],
+		"nametag" : [{
+			"name" : "Name Tag",
+			"experience" : 2500,
+			"chance" : 2,
+			"notifSRC" : "images/fishing/Name_Tag.png",
+			"notiftext" : "Name Tag"
+		}],
+		"saddle" : [{
+			"name" : "Saddle",
+			"experience" : 2500,
+			"chance" : 3,
+			"notifSRC" : "images/fishing/Saddle.png",
+			"notiftext" : "Saddle"
+		}],
+		"diamond" : [{
+			"name" : "Diamond",
+			"experience" : 5000,
+			"chance" : 1,
+			"notifSRC" : "images/fishing/Diamond.png",
+			"notiftext" : "Diamond"
+		}],
+		"netheritescrap" : [{
+			"name" : "Netherite Scrap",
+			"experience" : 1000,
+			"chance" : 2,
+			"notifSRC" : "images/fishing/Netherite_Scrap.png",
+			"notiftext" : "Netherite Scrap"
+		}],
+		"oldboots" : [{
+			"name" : "Old Boots",
+			"experience" : 1,
+			"chance" : 4,
+			"notifSRC" : "images/fishing/Leather_Boots.png",
+			"notiftext" : "Old Boots"
+		}],
+		"string" : [{
+			"name" : "String",
+			"experience" : 1,
+			"chance" : 4,
+			"notifSRC" : "images/fishing/String.png",
+			"notiftext" : "String"
+		}],
+		"stick" : [{
+			"name" : "Stick",
+			"experience" : 1,
+			"chance" : 6,
+			"notifSRC" : "images/fishing/Stick.png",
+			"notiftext" : "Stick"
+		}],
+		"bowl" : [{
+			"name" : "Bowl",
+			"experience" : 1,
+			"chance" : 6,
+			"notifSRC" : "images/fishing/Bowl.png",
+			"notiftext" : "Bowl"
+		}],
+		"rottingflesh" : [{
+			"name" : "Rotting Flesh",
+			"experience" : 1,
+			"chance" : 7,
+			"notifSRC" : "images/fishing/Rotten_Flesh.png",
+			"notiftext" : "Rotting Flesh"
+		}]
+	}],
+
+	"enddroptable" : [{
+		"cod" : [{
+			"name" : "Raw Cod",
+			"experience" : 10,
+			"chance" : 10,
+			"notifSRC" : "images/fishing/Raw_Cod.png",
+			"notiftext" : "Raw Cod"
+		}],
+		"salmon" : [{
+			"name" : "Raw Salmon",
+			"experience" : 25,
+			"chance" : 10,
+			"notifSRC" : "images/fishing/Raw_Salmon.png",
+			"notiftext" : "Raw Salmon"
+		}],
+		"tropical" : [{
+			"name" : "Tropical Fish",
+			"experience" : 50,
+			"chance" : 10,
+			"notifSRC" : "images/fishing/Clownfish.png",
+			"notiftext" : "Tropical Fish"
+		}],
+		"pufferfish" : [{
+			"name" : "Pufferfish",
+			"experience" : 75,
+			"chance" : 10,
+			"notifSRC" : "images/fishing/Pufferfish.png",
+			"notiftext" : "Pufferfish"
+		}],
+		"squid" : [{
+			"name" : "Squid",
+			"experience" : 100,
+			"chance" : 10,
+			"notifSRC" : "images/fishing/Squid.png",
+			"notiftext" : "Squid"
+		}],
+		"emerald" : [{
+			"name" : "Emerald",
+			"experience" : 5000,
+			"chance" : 1,
+			"notifSRC" : "images/fishing/Emerald.png",
+			"notiftext" : "Emerald"
+		}],
+		"woodenfishingrod" : [{
+			"name" : "Wooden Fishing Rod",
+			"experience" : 1,
+			"chance" : 2,
+			"notifSRC" : "images/fishing/Fishing_Rod.png",
+			"notiftext" : "Wooden Fishing Rod"
+		}],
+		"stonefishingrod" : [{
+			"name" : "Stone Fishing Rod",
+			"experience" : 10,
+			"chance" : 2,
+			"notifSRC" : "images/fishing/Stone_Fishing_Rod.png",
+			"notiftext" : "Stone Fishing Rod"
+		}],
+		"ironfishingrod" : [{
+			"name" : "Iron Fishing Rod",
+			"experience" : 20,
+			"chance" : 1,
+			"notifSRC" : "images/fishing/Iron_Fishing_Rod.png",
+			"notiftext" : "Iron Fishing Rod"
+		}],
+		"goldfishingrod" : [{
+			"name" : "Gold Fishing Rod",
+			"experience" : 30,
+			"chance" : 1,
+			"notifSRC" : "images/fishing/Gold_Fishing_Rod.png",
+			"notiftext" : "Gold Fishing Rod"
+		}],
+		"diamondfishingrod" : [{
+			"name" : "Diamond Fishing Rod",
+			"experience" : 40,
+			"chance" : 1,
+			"notifSRC" : "images/fishing/Diamond_Fishing_Rod.png",
+			"notiftext" : "Diamond Fishing Rod"
+		}],
+		"netheritefishingrod" : [{
+			"name" : "Netherite Fishing Rod",
+			"experience" : 50,
+			"chance" : 1,
+			"notifSRC" : "images/fishing/Netherite_Fishing_Rod.png",
+			"notiftext" : "Netherite Fishing Rod"
+		}],
+		"lilypad" : [{
+			"name" : "Lily Pad",
+			"experience" : 50,
+			"chance" : 5,
+			"notifSRC" : "images/fishing/Lily_Pad.png",
+			"notiftext" : "Lily Pad"
+		}],
+		"enchantedbook" : [{
+			"name" : "Enchanted Book",
+			"experience" : 25000,
+			"chance" : 1,
+			"notifSRC" : "images/fishing/Enchanted_Book.png",
+			"notiftext" : "Enchanted Book"
+		}],
+		"nautilusshell" : [{
+			"name" : "Nautilus Shell",
+			"experience" : 10000,
+			"chance" : 1,
+			"notifSRC" : "images/fishing/Nautilus_Shell.png",
+			"notiftext" : "Nautilus Shell"
+		}],
+		"nametag" : [{
+			"name" : "Name Tag",
+			"experience" : 2500,
+			"chance" : 2,
+			"notifSRC" : "images/fishing/Name_Tag.png",
+			"notiftext" : "Name Tag"
+		}],
+		"saddle" : [{
+			"name" : "Saddle",
+			"experience" : 2500,
+			"chance" : 3,
+			"notifSRC" : "images/fishing/Saddle.png",
+			"notiftext" : "Saddle"
+		}],
+		"diamond" : [{
+			"name" : "Diamond",
+			"experience" : 5000,
+			"chance" : 1,
+			"notifSRC" : "images/fishing/Diamond.png",
+			"notiftext" : "Diamond"
+		}],
+		"netheritescrap" : [{
+			"name" : "Netherite Scrap",
+			"experience" : 1000,
+			"chance" : 2,
+			"notifSRC" : "images/fishing/Netherite_Scrap.png",
+			"notiftext" : "Netherite Scrap"
+		}],
+		"oldboots" : [{
+			"name" : "Old Boots",
+			"experience" : 1,
+			"chance" : 4,
+			"notifSRC" : "images/fishing/Leather_Boots.png",
+			"notiftext" : "Old Boots"
+		}],
+		"string" : [{
+			"name" : "String",
+			"experience" : 1,
+			"chance" : 4,
+			"notifSRC" : "images/fishing/String.png",
+			"notiftext" : "String"
+		}],
+		"stick" : [{
+			"name" : "Stick",
+			"experience" : 1,
+			"chance" : 6,
+			"notifSRC" : "images/fishing/Stick.png",
+			"notiftext" : "Stick"
+		}],
+		"bowl" : [{
+			"name" : "Bowl",
+			"experience" : 1,
+			"chance" : 5,
+			"notifSRC" : "images/fishing/Bowl.png",
+			"notiftext" : "Bowl"
+		}],
+		"rottingflesh" : [{
+			"name" : "Rotting Flesh",
+			"experience" : 1,
+			"chance" : 7,
+			"notifSRC" : "images/fishing/Rotten_Flesh.png",
+			"notiftext" : "Rotting Flesh"
+		}]
+	}]
+}

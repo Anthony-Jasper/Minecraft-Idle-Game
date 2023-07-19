@@ -1,3 +1,4 @@
+/* Storage Animation */
 let storageAnim = document.getElementById("storageAnim");
 
 storageAnim.addEventListener("mouseenter", ( event ) => {
@@ -8,20 +9,18 @@ storageAnim.addEventListener("mouseleave", ( event ) => {
 	storageAnim.src = "/images/storage.png";
 }, false);
 
-
 /* FETCH - Grab skill and inject into innerscreen */
  // Loads woodcutting page on load - default
 window.addEventListener('load', (event) => {
-	grabSkill(event, "woodcutting");
+	grabSkill(event, "fishing");
 });
-
 
 const grabSkill = (event, page) => {
 	const skillItem = event.target;
 	let fileName;
 	//default
-	if(page == 'woodcutting'){
-		fileName = "woodcutting";
+	if(page == 'fishing'){
+		fileName = "fishing";
 	}
 	else{
 		fileName = skillItem.querySelector('.skillName').innerText;
@@ -43,13 +42,29 @@ const grabSkill = (event, page) => {
 			const skillPage = document.querySelector('#skillPage');
 			skillPage.innerHTML = html;
 			/* TODO: This needs to be expanded to allow other data to be pulled when other files are in play */
-			
+			/* TODO: Uses Global delay variable to cancel function from working. Not a fan off Global Variables but does it effect gameplay if discovered and abused? */
+			//get main element to add class. allows for dynamic colours to be used
+			const mainWrapper = document.querySelector('#wrapper');
 			switch (fileName) {
 				case 'woodcutting':
-					woodcuttingData();
+						stopDelay();
+						woodcuttingData();
+						mainWrapper.className = "woodcuttingPage";
 					break;
 				case 'mining':
-					miningData();
+						stopDelay();
+						miningData();
+						mainWrapper.className = "miningPage";
+					break;
+				case 'excavation':
+						stopDelay();
+						excavationData();
+						mainWrapper.className = "excavationPage";
+					break;
+				case 'fishing':
+					stopDelay();
+					fishingData();
+					mainWrapper.className = "fishingPage";
 					break;
 				default:
 			}
@@ -65,4 +80,17 @@ const grabSkill = (event, page) => {
 		// Change the banner icon to the active skill
 		const innerLogo = document.querySelector('#innerLogo');
 		innerLogo.src = "images/icons/" + fileName + ".png";
+}
+
+/* Tab Navigation - Skills*/
+function openContent(tabType) {
+  let tabContent = document.getElementsByClassName("miningTabs");
+  for (let i = 0; i < tabContent.length; i++) {
+    tabContent[i].style.display = "none";
+  }
+  document.getElementById(tabType).style.display = "block";
+}
+/* If switchin skill, will stop the previous skill from being active */
+function stopDelay() {
+  clearInterval(delay);
 }

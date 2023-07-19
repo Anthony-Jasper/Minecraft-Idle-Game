@@ -1,8 +1,8 @@
 .toolIcon,
 .itemWrapping,
-.treeImage,
+.itemImage,
 .itemData,
-.treeName,
+.itemName,
 .lvlreq,
 .xpInterval,
 .interval {
@@ -15,7 +15,6 @@
   justify-content: space-between;
   align-items: center;
   padding: 15px 35px;
-  background: $woodcutting;
 }
 #innerLogo {
   position: relative;
@@ -67,7 +66,7 @@
 }
 
 #woodcuttingSkill,
-#miningSkill {
+#miningSkill,#excavationSkill,#fishingSkill {
   position: relative;
   display: grid;
   justify-content: center;
@@ -79,7 +78,6 @@
 .skillcontainer {
   position: relative;
   display: block;
-  border-top: 3px solid $woodcutting;
   width: 300px;
   height: 160px;
   box-shadow: 0px 2px 5px 0px $black;
@@ -189,7 +187,6 @@
 
 #skillPage {
   position: relative;
-  background-image: url("../../images/backgrounds/woodcutting_background.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
@@ -200,7 +197,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba($woodcutting, 0.8);
+    opacity: 0.8;
   }
 }
 
@@ -230,9 +227,117 @@
   border: 2px solid $dark-grey;
   height: 15px;
   background-color: transparent;
+	margin: 0 auto;
 }
 .intervalBar {
   height: inherit;
   width: 0%;
-  background-color: $woodcutting;
+}
+
+/* Tabs */
+.miningNav {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  padding-top: 20px;
+  .miningTab {
+    background: transparent;
+    border: 0;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+    padding: 7px;
+    &:first-of-type {
+      margin-right: 75px;
+    }
+    &.activeTab {
+      background-color: $dark-grey;
+      border-top: 2px solid $mainprogress;
+    }
+  }
+  .miningTabIcon {
+    display: inline-block;
+    width: 40px;
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+}
+
+/* Changes colours depending on page */
+.woodcuttingPage {
+  #innerBanner,
+  .intervalBar {
+    background-color: $woodcutting;
+  }
+  .skillcontainer {
+    border-top: 3px solid $woodcutting;
+  }
+  #skillPage {
+    background-image: url("../../images/backgrounds/woodcutting_background.png");
+    &:before {
+      background: $woodcutting;
+    }
+  }
+}
+
+.miningPage {
+  #innerBanner,
+  .intervalBar {
+    background-color: $mining;
+  }
+  .skillcontainer {
+    border-top: 3px solid $mining;
+  }
+  #skillPage {
+    background-image: url("../../images/backgrounds/mining_background.png");
+    &:before {
+      background: $mining;
+    }
+  }
+}
+
+.excavationPage {
+  #innerBanner,
+  .intervalBar {
+    background-color: $excavation;
+  }
+  .skillcontainer {
+    border-top: 3px solid $excavation;
+  }
+  #skillPage {
+    background-image: url("../../images/backgrounds/excavation_background.jpg");
+    &:before {
+      background: $excavation;
+    }
+  }
+}
+
+.fishingPage {
+  #innerBanner,
+  .intervalBar {
+    background-color: $fishing;
+  }
+  .skillcontainer {
+    border-top: 3px solid $fishing;
+  }
+  #skillPage {
+    background-image: url("../../images/backgrounds/fishing_background.jpg");
+    &:before {
+      background: $fishing;
+    }
+  }
+	#fishingloottable{
+		width: 1000px;
+	}
+	.itemData p:nth-of-type(2){
+		font-size: 14px;
+    line-height: 1;
+    margin-top: 5px;
+	}
+	.itemData p:last-of-type {
+    margin-top: 20px;
+}
 }

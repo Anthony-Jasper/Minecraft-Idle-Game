@@ -1,0 +1,102 @@
+{
+	"dirt" : [{
+		"name" : "Dirt",
+		"lvlrequirement" : 1,
+		"interval" : 4,
+		"durability" : 1,
+		"experience" : 1,
+		"imageSRC" : "images/excavation/Dirt.png",
+		"notifSRC" : "images/excavation/Dirt.png",
+		"notiftext" : "Dirt"
+	}],
+
+	"sand" : [{
+		"name" : "Sand",
+		"lvlrequirement" : 10,
+		"interval" : 4,
+		"durability" : 1,
+		"experience" : 2,
+		"imageSRC" : "images/excavation/Sand.png",
+		"notifSRC" : "images/excavation/Sand.png",
+		"notiftext" : "Sand"
+	}],
+	
+	"gravel" : [{
+		"name" : "Gravel",
+		"lvlrequirement" : 20,
+		"interval" : 4,
+		"durability" : 4,
+		"experience" : 4,
+		"imageSRC" : "images/excavation/Gravel.png",
+		"notifSRC" : "images/excavation/Gravel.png",
+		"notifSRC2" : "images/excavation/Flint.png",
+		"notiftext" : "Gravel",
+		"notiftext2" : "Flint"
+	}],
+
+	"coarsedirt" : [{
+		"name" : "Coarse Dirt",
+		"lvlrequirement" : 35,
+		"interval" : 4,
+		"durability" : 4,
+		"experience" : 8,
+		"imageSRC" : "images/excavation/Coarse_Dirt.png",
+		"notifSRC" : "images/excavation/Coarse_Dirt.png",
+		"notiftext" : "Coarse Dirt"
+	}],
+
+	"grass" : [{
+		"name" : "Grass Block",
+		"lvlrequirement" : 45,
+		"interval" : 4,
+		"durability" : 6,
+		"experience" : 8,
+		"imageSRC" : "images/excavation/Grass.png",
+		"notifSRC" : "images/excavation/Grass.png",
+		"notiftext" : "Grass"
+	}],
+
+	"podzol" : [{
+		"name" : "Podzol",
+		"lvlrequirement" : 50,
+		"interval" : 8,
+		"durability" : 6,
+		"experience" : 24,
+		"imageSRC" : "images/excavation/Podzol.png",
+		"notifSRC" : "images/excavation/Podzol.png",
+		"notiftext" : "Podzol"
+	}],
+
+	"clay" : [{
+		"name" : "Clay Block",
+		"lvlrequirement" : 60,
+		"interval" : 8,
+		"durability" : 8,
+		"experience" : 24,
+		"imageSRC" : "images/excavation/Clay.png",
+		"notifSRC" : "images/excavation/Clay_Ball.png",
+		"notiftext" : "Clay"
+	}],
+
+	"soulsand" : [{
+		"name" : "Soul Sand",
+		"lvlrequirement" : 75,
+		"interval" : 32,
+		"durability" : 8,
+		"experience" : 96,
+		"imageSRC" : "images/excavation/Soul_Sand.png",
+		"notifSRC" : "images/excavation/Soul_Sand.png",
+		"notiftext" : "Soul Sand"
+	}],
+
+	"mycelium" : [{
+		"name" : "Mycelium",
+		"lvlrequirement" : 90,
+		"interval" : 32,
+		"durability" : 12,
+		"experience" : 120,
+		"imageSRC" : "images/excavation/Mycelium.png",
+		"notifSRC" : "images/excavation/Mycelium.png",
+		"notiftext" : "Mycelium"
+	}]
+}

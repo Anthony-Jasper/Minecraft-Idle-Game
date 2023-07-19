@@ -1,28 +1,32 @@
 const miningData = () => {
+	const blocksButton = document.getElementById("blockButton");
+	const oresButton = document.getElementById("oreButton");
 	//grabbing all the elements to inject data into
-	const woodcuttingItems = document.querySelectorAll('#miningSkill .miningItem');
-	const levelReq = document.querySelectorAll('#miningSkill .lvlreq');
-	const expInt = document.querySelectorAll('#miningSkill .xpInterval');
-	const imageSrc = document.querySelectorAll('#miningSkill .treeImage');
-	const treeName = document.querySelectorAll('#miningSkill .treeName');
-	const progressBars = document.querySelectorAll("#miningSkill .intervalBar");
-	const itemNotification = document.querySelectorAll("#miningSkill .itemNotif");
-	const notifSrc = document.querySelectorAll("#miningSkill .notifImage");
-	const lockedLevel = document.querySelectorAll("#miningSkill .lockedLvl");
+	const miningBlockItems = document.querySelectorAll('#miningBlocks .miningItem');
+	const miningItems = document.querySelectorAll('.miningItem');
+	const levelReq = document.querySelectorAll('.lvlreq');
+	const expInt = document.querySelectorAll('.xpInterval');
+	const imageSrc = document.querySelectorAll('.itemImage');
+	const displayName = document.querySelectorAll('.displayName');
+	const progressBars = document.querySelectorAll(".intervalBar");
+	const itemNotification = document.querySelectorAll(".itemNotif");
+	const notifSrc = document.querySelectorAll(".notifImage");
+	const lockedLevel = document.querySelectorAll(".lockedLvl");
+	const notifText = document.querySelectorAll(".notifText");
 	//sets all skill intervals to 0
 	let itemInterval = 0;
 	/* 
 		LEVELING
 	*/
-	let globalWoodcuttingLevel = 1;
-	let globalWoodcuttingCurrentExp = 0;
+	let globalminingLevel = 1;
+	let globalminingCurrentExp = 0;
 
-	const woodcuttingExpEle = document.querySelector('#innerXP');
-	const woodcuttingLevelEle = document.querySelector('#innerLVL');
-	const woodcuttingProgressEle = document.querySelector('#innerBar');
+	const miningExpEle = document.querySelector('#innerXP');
+	const miningLevelEle = document.querySelector('#innerLVL');
+	const miningProgressEle = document.querySelector('#innerBar');
 
 	//grabs data from json
-	fetch('data/woodcutting.json')
+	fetch('data/mining.json')
 		.then(response => {
 			if (!response.ok) {
            throw new Error("HTTP error " + response.status);
@@ -37,18 +41,23 @@ const miningData = () => {
 		for(let props in json){
 			dataARR.push([props, json [props]]);
 		}
-		for(let i = 0; i < Object.keys( json ).length; i++) {
-			//j sets the number for each element with the class woodcuttingItem
-			for(let j = 0; j < woodcuttingItems.length; j++){
-				//Both loops are compared aganist each other to set data within the html. If 0 & 0 it needs to grab the oaklog data and inject into the oaklog element.
-				if(i == j) {
-					levelReq[j].innerHTML = "level requirement: " + Number(`${dataARR[j][1][0].lvlrequirement}`);
-					expInt[j].innerHTML = Number(`${dataARR[j][1][0].experience}`) + " xp / " + Number(`${dataARR[j][1][0].interval}`) + " seconds";
-					treeName[j].innerHTML = `${dataARR[j][1][0].name}`;
-					imageSrc[j].src = `${dataARR[j][1][0].imageSRC}`;
-					notifSrc[j].src = `${dataARR[j][1][0].notifSRC}`;
-					break;
-				} 
+		let blockCounterSet = 0;
+		let oreCounterSet = miningBlockItems.length;
+		for(let i = 0; i < miningItems.length; i++) {	
+			if(`${dataARR[i][1][0].type}` == "block"){
+				levelReq[blockCounterSet].innerHTML = "level requirement: " + Number(`${dataARR[i][1][0].lvlrequirement}`);
+				expInt[blockCounterSet].innerHTML = Number(`${dataARR[i][1][0].experience}`) + " xp / " + Number(`${dataARR[i][1][0].interval}`) + " seconds";
+				displayName[blockCounterSet].innerHTML = `${dataARR[i][1][0].name}`;
+				imageSrc[blockCounterSet].src = `${dataARR[i][1][0].imageSRC}`;
+				notifSrc[blockCounterSet].src = `${dataARR[i][1][0].notifSRC}`;
+				blockCounterSet++;
+			}else{
+				levelReq[oreCounterSet].innerHTML = "level requirement: " + Number(`${dataARR[i][1][0].lvlrequirement}`);
+				expInt[oreCounterSet].innerHTML = Number(`${dataARR[i][1][0].experience}`) + " xp / " + Number(`${dataARR[i][1][0].interval}`) + " seconds";
+				displayName[oreCounterSet].innerHTML = `${dataARR[i][1][0].name}`;
+				imageSrc[oreCounterSet].src = `${dataARR[i][1][0].imageSRC}`;
+				notifSrc[oreCounterSet].src = `${dataARR[i][1][0].notifSRC}`;
+				oreCounterSet++;
 			}
 		}
 		
@@ -58,46 +67,68 @@ const miningData = () => {
 		let gathering = false;
 		let progressUpdate;
 		let gainedExp;
-		let skillLevel
-		let gatherItem = false;
-		for (let i = 0; i < woodcuttingItems.length; i++){
+		let blockCounterLock = 0;
+		let oreCounterLock = miningBlockItems.length;
+		for (let i = 0; i < miningItems.length; i++){
 
-			/* LOCKED SKILLS */
-			const lockedSkillCheck = () => {
-				skillLevel = `${dataARR[i][1][0].lvlrequirement}`;
-				if(globalWoodcuttingLevel < skillLevel){
-					woodcuttingItems[i].classList.add("locked");
-					lockedLevel[i-1].innerHTML = "level requirement : " + skillLevel;
-				}else{
-					woodcuttingItems[i].classList.remove("locked");
+			/* LOCKED SKILLS *///TODO: Not happy with this section
+			if(`${dataARR[i][1][0].type}` == "block"){
+				const lockedBlockSkillCheck = () => {
+					let skillLevelBlock = `${dataARR[i][1][0].lvlrequirement}`;
+					blockCounterLock++
+					if(globalminingLevel < skillLevelBlock){
+						miningItems[blockCounterLock-1].classList.add("locked");
+						lockedLevel[blockCounterLock-3].innerHTML = "level requirement : " + skillLevelBlock;
+					}
+					
+					if(blockCounterLock == 9){
+						blockCounterLock = 0;
+					}
 				}
+				setInterval(lockedBlockSkillCheck, 50);
+			}else{
+				const lockedOreSkillCheck = () => {
+					let skillLevelOre = `${dataARR[i][1][0].lvlrequirement}`;
+					oreCounterLock++
+					if(globalminingLevel < skillLevelOre){
+						miningItems[oreCounterLock-1].classList.add("locked");
+						lockedLevel[oreCounterLock-3].innerHTML = "level requirement : " + skillLevelOre;
+					}
+					if(oreCounterLock == 19){
+						oreCounterLock = miningBlockItems.length;
+					}
+				}
+					setInterval(lockedOreSkillCheck, 50);
 			}
-			setInterval(lockedSkillCheck, 50);
 
-			woodcuttingItems[i].addEventListener("click", ( ) => {
-				//gets the interval value from the array and adds an extra 0 to resemble seconds since I am using setinterval which only uses milliseconds.
-				itemInterval = `${dataARR[i][1][0].interval}${0}`;
-				gainedExp = `${dataARR[i][1][0].experience}`;
+			//START GATHERING ON CLICK
+			miningItems[i].addEventListener("click", ( ) => {
+					itemInterval = `${dataARR[i][1][0].interval}${0}`;
+					gainedExp = `${dataARR[i][1][0].experience}`;
+					itemName = `${dataARR[i][1][0].notiftext}`;
+					console.log(itemName);
+
+
 					if(gathering){
 						gathering = false;
 						progressWidth = 0;
 						//cycles through all elements and resets them. This prevents a few bugs where clicking on another item while one was active would not reset it.
-						for(let j = 0; j < woodcuttingItems.length; j++){
+						for(let j = 0; j < miningItems.length; j++){
 							progressBars[j].style.width = progressWidth + "%";
-							woodcuttingItems[j].style.borderColor = null;
+							miningItems[j].style.borderColor = null;
 						}
 						//clears the timer back to 0
 						clearInterval(progressUpdate);
 						itemNotification[i].classList.remove("itemCollected");
 					}else{
-						woodcuttingItems[i].style.borderColor  = "#d6b300";
+						miningItems[i].style.borderColor  = "#d6b300";
 						const progress = () => {
 							if (progressWidth >= 100) {
-								globalWoodcuttingCurrentExp = Number(globalWoodcuttingCurrentExp) + Number(gainedExp);
+								globalminingCurrentExp = Number(globalminingCurrentExp) + Number(gainedExp);
 								progressWidth = 0;
 								progressBars[i].style.width = progressWidth + "%";
-								gatherItem
 								itemNotification[i].classList.add("itemCollected");
+								notifText[i].innerHTML = "+1 " + itemName;
 							} else {
 								progressWidth++
 								progressBars[i].style.width = progressWidth + "%";
@@ -109,7 +140,7 @@ const miningData = () => {
 						//progressUpdate is used to be able to use clearInterval. setInterval runs the function progress whilst using the iteminterval value at the timer
 						progressUpdate = setInterval(progress, itemInterval);
 						gathering = true;
-					}
+						}
 				});
 			}
 		})
@@ -130,29 +161,39 @@ const miningData = () => {
 		for(let props in json){
 			levelsARR.push([props, json [props]]);
 		}
-		let delay;
 		let leftover;
 		//grabs the experience amount requried for the level. We use the level and -1 since we start at level 1 but the Array starts at index 0.
-		let totalExp = Number(`${levelsARR[globalWoodcuttingLevel-1][1][0].experience}`);
-		woodcuttingLevelEle.innerHTML = "level " + globalWoodcuttingLevel;
+		let totalExp = Number(`${levelsARR[globalminingLevel-1][1][0].experience}`);
+		miningLevelEle.innerHTML = "level " + globalminingLevel;
 		//allows us to constantly update and check the exp gained and whether to level up or not
 		const checkExp = () => {
-			woodcuttingLevelEle.innerHTML = "level " + globalWoodcuttingLevel;
-			if (globalWoodcuttingCurrentExp >= totalExp) {
-				globalWoodcuttingLevel++;
-				woodcuttingProgressEle.value = 0;
+			miningLevelEle.innerHTML = "level " + globalminingLevel;
+			if (globalminingCurrentExp >= totalExp) {
+				globalminingLevel++;
+				miningProgressEle.value = 0;
 				//grabs the value for the "overflow" amount when you level up. I then convert it from a negative to a positive value using *-1
-				leftover = (totalExp - globalWoodcuttingCurrentExp) * -1;
-				globalWoodcuttingCurrentExp = leftover;
-				totalExp = Number(`${levelsARR[globalWoodcuttingLevel-1][1][0].experience}`);
+				leftover = (totalExp - globalminingCurrentExp) * -1;
+				globalminingCurrentExp = leftover;
+				totalExp = Number(`${levelsARR[globalminingLevel-1][1][0].experience}`);
 			}		
-			woodcuttingExpEle.innerHTML = globalWoodcuttingCurrentExp + " / " + totalExp;
+			miningExpEle.innerHTML = globalminingCurrentExp + " / " + totalExp;
 			//converts the current exp into a % 
-			woodcuttingProgressEle.value = Number(globalWoodcuttingCurrentExp) / Number(`${levelsARR[globalWoodcuttingLevel-1][1][0].experience}`) * 100;
+			miningProgressEle.value = Number(globalminingCurrentExp) / Number(`${levelsARR[globalminingLevel-1][1][0].experience}`) * 100;
 		}
-		delay = setInterval(checkExp, 50);
+		delay = setInterval(checkExp, 500);
 		})
 	.catch(err => {
 		this.dataError = true; 
 	});
+
+	//Tabs styling
+	blocksButton.addEventListener("click", ( ) => {
+		oresButton.classList.remove('activeTab');
+		blocksButton.classList.add('activeTab');
+	});
+	oresButton.addEventListener("click", ( ) => {
+		blocksButton.classList.remove('activeTab');
+		oresButton.classList.add('activeTab');
+	});
 }
+
